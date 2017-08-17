@@ -1,6 +1,6 @@
 # packed-to-the-rafters
 
-# Team Members
+## Team Members
 - Coleen Emily McKay
 - Kirstyn Jozefowski
 - Chris Fuller
