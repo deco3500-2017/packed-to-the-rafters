@@ -144,6 +144,7 @@ Pairing users
 Features will be combined when going through sprints. This is a decision made either towards a limited timeframe or positive combined testing. Where testing and developing with said features will produce positive outcomes towards the overall application. For example this could be either towards faster testing evaluation correlation or both features conflict/ work in correlation with each other.
 
 ### Sprint Breakdown
+Below is the brief breakdown of all upcoming sprints. 
 
 | Sprint | Start Date | End Date | Tasks |
 |--------|------------|----------|-------|
@@ -151,8 +152,8 @@ Features will be combined when going through sprints. This is a decision made ei
 | 1 | 21st August | 3rd September | concept development, personas, user interface design, paper prototyping, creating testing plan, conduct user testing, documentation |
 | 2 | 4th September | 17th September | prototyping, front end and back end development of prototype, user interface redesign based on feedback, user testing and documentation |
 | 3 | 18th September | 1st October | Prototype development, front-end and back-end code development, user interface development |
-| 4 | 2nd October | 15th October | ------- |
-| 5 | 16th October | 22nd October | Conference poster creation, ….. |
+| 4 | 2nd October | 15th October | UX testing and changing designs accordingly |
+| 5 | 16th October | 22nd October | Conference poster creation and finalising designs and documentation |
 | 6 | 23rd October | 27th October | Finalising product, preparing for presentation, product submission |
 
 
