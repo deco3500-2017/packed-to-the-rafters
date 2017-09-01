@@ -51,6 +51,7 @@ Relationship Status: In a relationship
 - How can we help her find other travellers travelling with a friend?
 - How can we lessen the language barrier for international travellers?
 
+***
 
 #### Damien Kistanza
 Gender: Male
@@ -96,8 +97,10 @@ Relationship Status: Single
 | Emily Toniotti |43921317| Final year Multimedia Design and Marketing and Advertising Student. Experienced with graphic design, user experience and front end. |Front-end, Research and Content|
 
 Domenico Poutanen has been designated the role of scrum master. Where his job is to make sure that all team based communication and problems are dealt with.
+
 Coleen McKay is responsible for logistics, such as meetings minutes and coordination. 
 When creating content and code, all team members will be responsible for their own documentation (i.e. User testing, standardisations or JavaDoc)
+
 Decisions will be made based on a democratic vote, assuming all alternatives of the decision have been researched, tested and reasoned. There cannot be cases in which the vote results in a draw, as there are only five team members; however, if there are valid reasons the minority believes the majority decision should not be carried through, and is accompanied with valid research, the case will be looked into further. 
 
 ## Meetings
