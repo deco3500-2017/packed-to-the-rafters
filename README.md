@@ -98,6 +98,8 @@ Relationship Status: Single
 
 Domenico Poutanen has been designated the role of scrum master. Where his job is to make sure that all team based communication and problems are dealt with.
 
+Dominico will deal with back-end code development. Chris, Kirstyn, Emily and Coleen will together deal with both front-end development and UX Design of the application. Where needed, team members will cross over into other areas.
+
 Coleen McKay is responsible for logistics, such as meetings minutes and coordination. 
 When creating content and code, all team members will be responsible for their own documentation (i.e. User testing, standardisations or JavaDoc)
 
