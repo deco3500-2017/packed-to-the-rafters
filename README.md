@@ -22,9 +22,13 @@ Travel Pack aims to reach out to travellers of all kinds. Domestic and internati
 In order to gain a better insight as to what features should be included within the platform, personas of potential Travel App users have been created. Examples are shown below:
 
 #### Hilari Makae
+
 Gender: Female
+
 Age: 19
+
 Origin: California, United States 
+
 Relationship Status: In a relationship
 
 *Background*
@@ -54,9 +58,13 @@ Relationship Status: In a relationship
 ***
 
 #### Damien Kistanza
+
 Gender: Male
+
 Age: 26
+
 Origin: Melbourne, Australia 
+
 Relationship Status: Single
 
 *Background*
