@@ -19,71 +19,71 @@ Travel Pack differs from existing travel applications as it creates events for t
 Travel Pack aims to reach out to travellers of all kinds. Domestic and international; women and men; adventurous and conservative; the features of this application cater to many demographics and allow travellers from all different backgrounds to come together.
 
 ### Personas
-#####Hilari Makae
+In order to gain a better insight as to what features should be included within the platform, personas of potential Travel App users have been created. Examples are shown below:
+
+#### Hilari Makae
 Gender: Female
 Age: 19
 Origin: California, United States 
 Relationship Status: In a relationship
 
-#####Background
-Hilari loves being around other people. She is very extroverted, loves to meet new people, is currently planning a 2 month holiday around Europe with her friend and likes to post pictures of the destinations she goes to. She prefers hanging out with boys because less drama. When traveling Hilari prefers to stay in a hostel share room with 6 or more people and is always looking for the next adventure; whether it be skiing in the Swiss Alps or skydiving in Austria.
+*Background*
+- Hilari loves being around other people. She is very extroverted, loves to meet new people, is currently planning a 2 month holiday around Europe with her friend and likes to post pictures of the destinations she goes to. She prefers hanging out with boys because less drama. When traveling Hilari prefers to stay in a hostel share room with 6 or more people and is always looking for the next adventure; whether it be skiing in the Swiss Alps or skydiving in Austria.
 
-######Interests: 
-Sightseeing, photography and thrill seeking. 
+*Interests:*
+- Sightseeing, photography and thrill seeking. 
 
-######Goals: 
-*Do as many touristy things as possible.
-*She wants to be able to make meeting people when travelling easier
-*She wants to be able to share images of the places she’s been with other travellers
-*She wants to go to party events at night in different countries
-*She wants be able to find information on her current location without going to a information centre
+*Goals:*
+- Do as many touristy things as possible.
+- She wants to be able to make meeting people when travelling easier
+- She wants to be able to share images of the places she’s been with other travellers
+- She wants to go to party events at night in different countries
+- She wants be able to find information on her current location without going to a information centre
 
-#####Challenges/Motivations: 
-*Does not have knowledge on where to go to find good tourist locations.
-*Wants to make a group of travel friends without going on an organised tour.
-*Wants to travel with people who have the same interests as her and want to do the same types of things. 
-*Finds it difficult to find information and locations because of the language barrier
+*Challenges/Motivations:*
+- Does not have knowledge on where to go to find good tourist locations.
+- Wants to make a group of travel friends without going on an organised tour.
+- Wants to travel with people who have the same interests as her and want to do the same types of things. 
+- Finds it difficult to find information and locations because of the language barrier
 
-#####Questions:
-*How can we allow Hilari to find tourists with same interests as her?
-*How can we help her find other travellers travelling with a friend?
-*How can we lessen the language barrier for international travellers?
+*Questions:*
+- How can we allow Hilari to find tourists with same interests as her?
+- How can we help her find other travellers travelling with a friend?
+- How can we lessen the language barrier for international travellers?
 
 
-####Damien Kistanza
+#### Damien Kistanza
 Gender: Male
 Age: 26
 Origin: Melbourne, Australia 
 Relationship Status: Single
 
-#####Background
-Damien is a free spirit traveler that loves hanging out with people for a short period of time and considers himself to be an introverted extrovert. When travelling Damien is looking to experience new cultures, food, the party scene and tourist attractions. Damien is currently embarking on a solo 6 week backpacking holiday around Southeast Asia hoping to immerse himself in the cultures of Indonesia, Thailand and Vietnam. 
+*Background*
+- Damien is a free spirit traveler that loves hanging out with people for a short period of time and considers himself to be an introverted extrovert. When travelling Damien is looking to experience new cultures, food, the party scene and tourist attractions. Damien is currently embarking on a solo 6 week backpacking holiday around Southeast Asia hoping to immerse himself in the cultures of Indonesia, Thailand and Vietnam. 
 
-#####Interests:
-Food, parties and foreign cultures
+*Interests:*
+- Food, parties and foreign cultures
 
-#####Goals:
-*He wants to enjoy the never ending party of life
-*He wants to try authentic traditional food 
-*He wants to see not only the big tourist attractions but also how the locals live
-*He wants to meet new people at each new place he travels  
+*Goals:*
+- He wants to enjoy the never ending party of life
+- He wants to try authentic traditional food 
+- He wants to see not only the big tourist attractions but also how the locals live
+- He wants to meet new people at each new place he travels  
 
-######Challenges/Motivations:
-*Language is often a barrier he has to overcome when travelling between tourist attractions
-*Finding the best places for traditional food
-*Meeting other people looking to party at each point in his holiday
-*Using all his data while navigating each destination
+*Challenges/Motivations:*
+- Language is often a barrier he has to overcome when travelling between tourist attractions
+- Finding the best places for traditional food
+- Meeting other people looking to party at each point in his holiday
+- Using all his data while navigating each destination
 
-######Questions:
-*How can we provide Damien with wifi hotspots in foreign countries so he doesn’t use up all his data at once?
-*How can we help him find other travellers that are looking to party?
-*How can we help him to find the all authentic traditional food in each destination?
-*How can provide tips or common phrases to help him communicate with locals in their native language?
-
+*Questions:*
+- How can we provide Damien with wifi hotspots in foreign countries so he doesn’t use up all his data at once?
+- How can we help him find other travellers that are looking to party?
+- How can we help him to find the all authentic traditional food in each destination?
+- How can provide tips or common phrases to help him communicate with locals in their native language?
 
 ***
 
-
 # The Team
 *Pack*ed to The Rafters consists of five team members:
 
@@ -94,13 +94,12 @@ Food, parties and foreign cultures
 | Coleen McKay |43927252| Final year Multimedia Design student. Experienced with graphic design and front end.|Front end, Back end and Design|
 | Domenico Poutanen |435742188| Final year IT student, majoring in Software Design. Experienced in front and back end.|Back-end| 
 | Emily Toniotti |43921317| Final year Multimedia Design and Marketing and Advertising Student. Experienced with graphic design, user experience and front end. |Front-end, Research and Content|
+
 Domenico Poutanen has been designated the role of scrum master. Where his job is to make sure that all team based communication and problems are dealt with.
 Coleen McKay is responsible for logistics, such as meetings minutes and coordination. 
 When creating content and code, all team members will be responsible for their own documentation (i.e. User testing, standardisations or JavaDoc)
 Decisions will be made based on a democratic vote, assuming all alternatives of the decision have been researched, tested and reasoned. There cannot be cases in which the vote results in a draw, as there are only five team members; however, if there are valid reasons the minority believes the majority decision should not be carried through, and is accompanied with valid research, the case will be looked into further. 
 
-
-
 ## Meetings
 ### Meeting Schedule
 Meetings are scheduled to occur every week in the workshop (W03). This time slot was chosen as it is the only feasible time we are all able to meet during the week. Each workshop will begin with a brief stand up to ensure everyone is aware of what we are all currently working on. If required, the meeting will then follow on from the stand up to talk about everyone’s workload more in-depth, as well as any research undertaken since the last meeting and testing results. 
@@ -122,33 +121,14 @@ The primary method of communication will be via *Slack*. Slack will be utilised 
 |Phone Calls|Emergencies|
 |Github|Version control/asset management|
 
-
-
 ## Rule Breaches
-### Breach:
-Team members not attending meetings without prior notice
-Conflict Resolution: 
-Team resolves conflict through communication with team member. If conflict is not resolved and breach keeps happening, the team will bring conflict to tutors attention. 
-
-### Breach:
-Team members not communicating with team
-Conflict Resolution:
-All methods of communication will be used to try and get in contact with team member. After three instances where a lack of communication by a team member occurs, a team meeting will be scheduled to resolve the issue in person. If the team member is ultimately uncontactable tutors will be notified and the issue will be dealt with through the teaching staff.
-
-### Breach:
-Team members wanting to work on the same tickets
-Conflict Resolution: 
-If team members wish to work on the same tickets, workload will be divided equally. No team member is allowed to claim a ticket as their own and *only* theirs. Workload will split evenly between everyone to ensure working hours are fair. Another instance example is if two people want to work on a small design issue, and one of those people is already working on a design issue, the new design issue will be delegated to the other person to ensure it is fair.
-
-### Breach:
-Team members not contributing adequately to the project
-Conflict Resolution: 
-Instances where a team member is not contributing, a team meeting will be held to resolve the issue. Perhaps the problem lies within the team member not knowing what to contribute; therefore, during the meeting certain tasks will be delegated. If there is no improvement of contribution or effort, another team meeting will be held to see if there are underlying issues regarding the lack of contribution. If there are no underlying issues and contribution does not improve, teaching staff will be notified.
-
-### Breach:
-Team members plagiarising and not referencing
-Conflict Resolution:
-If a team member chooses to plagiarise in order to increase their contribution, a team meeting will be held to resolve the issue and revert the project to a version without the plagiarised content. As all team members are students of the university, we should all be aware that plagiarism is a breach of the code of conduct; therefore, teaching staff will be notified.
+|Breach|Conflict Resolution|
+|------|-------------------|
+|Team members not attending meetings without prior notice|Team resolves conflict through communication with team member. If conflict is not resolved and breach keeps happening, the team will bring conflict to tutors attention.|
+|Team members not communicating with team|All methods of communication will be used to try and get in contact with team member. After three instances where a lack of communication by a team member occurs, a team meeting will be scheduled to resolve the issue in person. If the team member is ultimately uncontactable tutors will be notified and the issue will be dealt with through the teaching staff.|
+|Team members wanting to work on the same tickets|If team members wish to work on the same tickets, workload will be divided equally. No team member is allowed to claim a ticket as their own and *only* theirs. Workload will split evenly between everyone to ensure working hours are fair. Another instance example is if two people want to work on a small design issue, and one of those people is already working on a design issue, the new design issue will be delegated to the other person to ensure it is fair.|
+|Team members not contributing adequately to the project|Instances where a team member is not contributing, a team meeting will be held to resolve the issue. Perhaps the problem lies within the team member not knowing what to contribute; therefore, during the meeting certain tasks will be delegated. If there is no improvement of contribution or effort, another team meeting will be held to see if there are underlying issues regarding the lack of contribution. If there are no underlying issues and contribution does not improve, teaching staff will be notified.|
+|Team members plagiarising and not referencing|If a team member chooses to plagiarise in order to increase their contribution, a team meeting will be held to resolve the issue and revert the project to a version without the plagiarised content. As all team members are students of the university, we should all be aware that plagiarism is a breach of the code of conduct; therefore, teaching staff will be notified.|
 
 ## Project Plan
 
@@ -164,7 +144,7 @@ Pairing users
 Features will be combined when going through sprints. This is a decision made either towards a limited timeframe or positive combined testing. Where testing and developing with said features will produce positive outcomes towards the overall application. For example this could be either towards faster testing evaluation correlation or both features conflict/ work in correlation with each other.
 
 ### Sprint Breakdown
-< table >
+
 | Sprint | Start Date | End Date | Tasks |
 |--------|------------|----------|-------|
 | 0 | 9th August | 20th August | Group Formation, Idea and concept generation |
