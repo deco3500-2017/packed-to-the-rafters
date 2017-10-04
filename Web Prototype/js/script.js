@@ -1,8 +1,8 @@
 $(document).ready(function() {
-/*
- * Replace all SVG images with inline SVG
-    Reference: https://stackoverflow.com/questions/11978995/how-to-change-color-of-svg-image-using-css-jquery-svg-image-replacement
- */
+    /*
+     * Replace all SVG images with inline SVG
+        Reference: https://stackoverflow.com/questions/11978995/how-to-change-color-of-svg-image-using-css-jquery-svg-image-replacement
+     */
     jQuery('img.svg').each(function(){
         var $img = jQuery(this);
         var imgID = $img.attr('id');
@@ -30,10 +30,14 @@ $(document).ready(function() {
 
         }, 'xml');
     });
-/*
-    function addClassByClick(function() {
-      $(this).removeClass(".nav-btn-svg");
-      $(this).addClass(".selected-nav-btn");
+
+
+    /* Changes appearance of current page icon */
+    $('.nav-bar li').on('click', function(){
+        $(".nav-btn-svg").removeClass('nav-btn-svg-selected');
+        $(this).find(".nav-btn-svg").addClass('nav-btn-svg-selected');
+
+        var selected = $(this).find(".nav-btn-svg");
+        selected.attr("width", "200");
     });
-    */
 });
