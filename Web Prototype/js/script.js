@@ -31,7 +31,6 @@ $(document).ready(function() {
         }, 'xml');
     });
 
-
     /* Changes appearance of current page icon */
     $('.nav-bar li').on('click', function(){
         $(".nav-btn-svg").removeClass('nav-btn-svg-selected');
@@ -40,4 +39,5 @@ $(document).ready(function() {
         var selected = $(this).find(".nav-btn-svg");
         selected.attr("width", "200");
     });
+
 });

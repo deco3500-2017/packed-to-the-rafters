@@ -4,7 +4,14 @@ body {
 }
 
 /** NAVIGATION BAR **/
-
+.nav-container {
+	width: 100%;
+	height: 50px;
+	background-color: #FFFFFF;
+	border-top: 2px solid #e5e5e5;
+	position: absolute;
+	bottom: 0;
+}
 
 ul.nav-bar {
 	display: table;
@@ -14,7 +21,6 @@ ul.nav-bar {
 	padding: 0;
 	margin: 0;
 	width: 100%;
-	border-top: 2px solid #e5e5e5;
 }
 
 .nav-bar li {
@@ -22,6 +28,7 @@ ul.nav-bar {
     text-align: center;
     vertical-align: bottom;
     height: 60px;
+    padding-bottom: 5px;
 }
 
 .nav-btn-svg {
@@ -31,7 +38,6 @@ ul.nav-bar {
 }
 
 .nav-btn-svg-selected {
-	fill: green;
 	width: 60px;
 	height: 60px;
 }
@@ -44,16 +50,31 @@ ul.nav-bar {
 	z-index: 999;
 	top: 5%;
 	width: 80%;
-}
-
-.search-box input {
-	padding: 0;
-	margin: 0;
-	height: 25px;
+	-webkit-box-shadow: -2px 12px 10px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 12px 10px -9px rgba(0,0,0,0.75);
+	box-shadow: -2px 12px 10px -9px rgba(0,0,0,0.75);
 }
 
 .keyword-input {
-	width: 60%;
+	width: calc(100% - 50px);
+	border-radius: 2px;
+	border: 0px;
+	padding-left: 10px;
+	margin: 0;
+	height: 30px;
+}
+
+.search-btn {
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	height: 32px;
+	width: 32px;
+	background: url("../images/icons/search.jpg");
+	background-color: #FFFFFF;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: transparent;
+	border: 0px;
 }
 
 .map {
