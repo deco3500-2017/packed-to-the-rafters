@@ -61,3 +61,8 @@ body {
 .keyword-input {
 	width: 60%;
 }
+
+.map {
+	width: 100vw;
+	height: 100vh;
+}
