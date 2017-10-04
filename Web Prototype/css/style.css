@@ -4,9 +4,9 @@ body {
 }
 
 /** NAVIGATION BAR **/
-.nav-bar {
+.nav-bar-container {
 	width: 100%;
-	height: 60px;
+	height: 45px;
 	background-color: #FFFFFF;
 	border-top: 3px solid #f2f2f2;
 	position: absolute;
@@ -24,7 +24,22 @@ body {
 .nav-bar ul li {
 	display: inline;
 	flex: auto;
-	line-height: 60px;
+	line-height: 35px;
+	text-align: center;
+}
+
+.nav-bar ul li a {
+	display: inline-block;
+}
+
+.nav-btn-div {
+	line-height: 35px;
+	margin: 0 auto;
+}
+
+.nav-btn-svg {
+	width: 35px;
+	fill: #ff75bc;
 }
 
 /** Search Bar **/
