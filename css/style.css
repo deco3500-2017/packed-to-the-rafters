@@ -28,7 +28,7 @@ ul.nav-bar {
     text-align: center;
     vertical-align: bottom;
     height: 60px;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
 
 .nav-btn-svg {
@@ -57,7 +57,8 @@ ul.nav-bar {
 
 .keyword-input {
 	width: calc(100% - 50px);
-	border-radius: 2px;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
 	border: 0px;
 	padding-left: 10px;
 	margin: 0;
