@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Pack</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+        <meta name="viewport" content="width=device-width">
+</head>
+<body>
+	<!-- Map -->
+	<div id="map" class="map"></div>
+    <script type="text/javascript" src="js/mapStyle.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgfNuxJR_ep_0iHbdcqe1BGwyM2IMaPGQ&callback=initMap">
+    </script>
+    
+    <!-- Navigation Bar -->
+	<div class="nav-container">
+		<ul class="nav-bar">
+			<li>
+				<a href="events.html">
+					<img id="events" class="svg nav-btn-svg" src="images/icons/calendar.png" alt="Events"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img id="map" class="svg nav-btn-svg nav-btn-svg-selected" src="images/icons/map.png" alt="Profile"/>
+				</a>
+			</li>	
+			<li>
+				<a href="profile.html">
+					<img id="profile" class="svg nav-btn-svg" src="images/icons/profile.png" alt="Profile"/>
+				</a>
+			</li>	
+		</ul>
+	</div>
+
+	<!-- Search Bar -->
+	<div class="search-box">
+		<input class="keyword-input" type="text" name="keyword" placeholder="Search..."><input class="search-btn" type="submit" value="Submit">
+	</div>
+</body>
+</html>
