@@ -74,32 +74,37 @@ ul.nav-bar {
 
 /*=== SEARCH BAR ===*/
 .search-box {
-	margin-left: 10%;
-	text-align: center;
 	position: absolute;
+	margin-left: 10%;
 	z-index: 999;
-	top: 5%;
 	width: 80%;
+	top: 5%;
 	-webkit-box-shadow: -2px 12px 10px -9px rgba(0,0,0,0.75);
 	-moz-box-shadow: -2px 12px 10px -9px rgba(0,0,0,0.75);
 	box-shadow: -2px 12px 10px -9px rgba(0,0,0,0.75);
 }
 
 .text-input {
-	width: calc(100% - 50px);
+	width: 90%;
 	border-radius: 2px;
 	border: 0px;
 	padding-left: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	height: 30px;
+	height: 32px;
 	font-size: 0.8em;
+}
+
+#search-box-inner {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 #keyword {
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
+	width: calc(100% - 10px);
 }
 
 .search-btn {
@@ -113,6 +118,9 @@ ul.nav-bar {
 	background-repeat: no-repeat;
 	color: transparent;
 	border: 0px;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .map {
