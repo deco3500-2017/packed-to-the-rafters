@@ -96,11 +96,6 @@ ul.nav-bar {
 	font-size: 0.8em;
 }
 
-#search-box-inner {
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
 #keyword {
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
@@ -161,6 +156,10 @@ ul.nav-bar {
 }
 
 #signup {
+	text-decoration: none;
+}
+
+#signup p {
 	width: 80px;
 	background-color: rgba(255,255,255,0.7);
 	border-radius: 10px;
@@ -173,4 +172,10 @@ ul.nav-bar {
 	background-color: rgba(255,255,255,0.9);
 	border-radius: 15px;
 	padding: 5px 15px;
+	border: 0;
+	font-size: 1.0em;
+}
+
+#login:focus {
+	background-color: #fca4c8;
 }
