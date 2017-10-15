@@ -186,7 +186,7 @@ ul.nav-bar {
 	margin: 20px 0px 10px 0px;
 }
 
-/*========== LOGIN ========== */
+/*========== PROFILE ========== */
 .profile {
 	background-color: #efefef;
 }
@@ -253,14 +253,91 @@ ul.nav-bar {
 	font-size: 2.0em;
 }
 
-.fav-tags {
+.tags {
 	padding: 0;
 }
 
-.fav-tags li {
+.tags li {
 	line-height: 30px;
 	display: inline;
-	background-color: pink;
+	background-color: #ffadc9;
 	padding: 3px 12px;
 	border-radius: 15px;
+}
+
+/*========== EVENTS ========== */
+.events {
+	background-color: #efefef;
+}
+
+.events-container {
+	width: 80%;
+	margin-left: 10%;
+	padding: 20px 0px 110px 0px;
+}
+
+.add-event {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 118px;
+	border-radius: 15px;
+	background-color: #ffadc9;
+	padding: 4px 12px;
+	font-size: 0.9em;
+}
+
+.card {
+	width: 100%;
+	margin: 20px 0px 30px 0px;
+	background-color: #FFFFFF;
+}
+
+.card-info {
+	padding: 0px 15px 15px 15px;
+}
+
+.card-image {
+	height: 140px;
+	background-image: url("../images/events/location-image.jpg");
+	background-size: 100% 140px;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.card-info-details {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.card-info-details li {
+	display: inline-block;
+}
+
+.card-info-details li:nth-child(1) {
+	width: 170px;
+}
+
+.card-info-details li:nth-child(2) {
+	text-align: center;
+	width: 90px;
+}
+
+.events-h2 {
+	font-size: 1.0em;
+}
+
+#events-tags {
+	display: inline;
+}
+
+.events-p {
+	font-size: 0.8em;
+	margin: 0;
+	padding: 4px 0px;
+}
+
+#events-tags li {
+	font-size: 0.8em;
 }
