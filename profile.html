@@ -2,12 +2,13 @@
 <html>
 <head>
 	<title>Travel Pack</title>
+	<script src="https://use.fontawesome.com/9f0f64771e.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-        <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
 </head>
-<body>
+<body class="profile">
     <!-- Navigation Bar -->
 	<div class="nav-container">
 		<ul class="nav-bar">
@@ -28,8 +29,40 @@
 			</li>	
 		</ul>
 	</div>
-
-	PROFILE PAGE
-
+	<span><i id="profile-settings" class="fa fa-cog" aria-hidden="true"></i></span>
+	<div class="profile-container">
+	<!-- Profile Pic -->
+	<div class="profile-pic">
+	</div>
+		<!-- Details -->
+		<div class="profile-main-details">
+			<p id="profile-name" class="main-p">Jai Paul</p>
+			<p class="main-p">21</p>
+		</div>
+		<div class="profile-minor-details">
+			<div id="bio">
+				<h1 class="profile-h1">Bio</h1>
+				<p class="profile-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sapien orci, tempus at luctus nec, dapibus non leo. Ut vel massa ultrices, tempus urna eget, laoreet quam. Nullam in eros sapien.</p>
+			</div>
+			<div id="current-location">
+				<h1 class="profile-h1">Currently At</h1>
+				<p class="profile-p">Brisbane, Australia.</p>
+			</div>
+			<div id="interests">
+				<h1 class="profile-h1">Interests</h1>
+				<p class="profile-p">Duis at tincidunt diam, Phasellus, pellentesque, gravida, nunc.</p>
+			</div>
+			<div id="profile-tags">
+				<h1 class="profile-h1">Favourite Tags</h1>
+				<ul class="fav-tags">
+					<li>AFL</li>
+					<li>Swimming</li>
+					<li>Beach</li>
+					<li>Flying</li>
+					<li>Waterfalls</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

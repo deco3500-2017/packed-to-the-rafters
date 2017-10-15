@@ -37,8 +37,9 @@ body {
 	height: 50px;
 	background-color: #FFFFFF;
 	border-top: 2px solid #e5e5e5;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
+	z-index: 9999;
 }
 
 ul.nav-bar {
@@ -128,8 +129,8 @@ ul.nav-bar {
 	background-image: url("../images/login-bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100%;
 	width: 100%;
+	min-height: 100%;
 	position: absolute;
 	top: 0;
 	z-index: -999;
@@ -178,4 +179,88 @@ ul.nav-bar {
 
 #login:focus {
 	background-color: #fca4c8;
+}
+
+/*========== LOGIN ========== */
+.heading-1 {
+	margin: 20px 0px 10px 0px;
+}
+
+/*========== LOGIN ========== */
+.profile {
+	background-color: #efefef;
+}
+
+.profile-container {
+	width: 80%;
+	position: absolute;
+	top: 18%;
+	margin-left: 10%;
+	margin-bottom: 100px;
+}
+
+.profile-main-details p:nth-child(2) {
+	padding-bottom: 20px;
+}
+
+#profile-name {
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+.main-p {
+	margin: 0;
+	padding-top: 10px;
+	color: #FFFFFF;
+}
+
+.profile-h1 {
+	font-size: 0.9em;
+}
+
+.profile-p {
+	font-size: 0.9em;
+}
+
+.profile-main-details {
+	padding-top: 60px;
+	text-align: center;
+	background-color: #ffadc9;
+}
+
+.profile-minor-details {
+	padding: 10px 20px;
+	background-color: white;
+}
+
+.profile-pic {
+	position: absolute;
+	margin-left: calc(50% - 60px);
+	top: -65px;
+	border-radius: 50%;
+	background-image: url("../images/profile-pic.jpg");
+	background-size: cover;
+	display: block;
+	width: 120px;
+	height: 120px;
+	z-index: 9999;
+}
+
+#profile-settings {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 2.0em;
+}
+
+.fav-tags {
+	padding: 0;
+}
+
+.fav-tags li {
+	line-height: 30px;
+	display: inline;
+	background-color: pink;
+	padding: 3px 12px;
+	border-radius: 15px;
 }
