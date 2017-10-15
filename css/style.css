@@ -209,7 +209,7 @@ ul.nav-bar {
 	position: absolute;
 	top: 18%;
 	margin-left: 10%;
-	margin-bottom: 100px;
+	padding-bottom: 100px;
 }
 
 .profile-main-details p:nth-child(2) {
