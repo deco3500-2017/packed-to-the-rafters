@@ -124,7 +124,7 @@ ul.nav-bar {
 	height: 100vh;
 }
 
-/*========== LOGIN ========== */
+/*========== LOGIN / SIGNUP========== */
 .background {
 	background-image: url("../images/login-bg.jpg");
 	background-size: cover;
@@ -168,6 +168,19 @@ ul.nav-bar {
 	font-size: 0.8em;
 }
 
+.back-btn {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	border: 0;
+	font-size: 1.8em;
+	width: 40px;
+	height: 40px;
+	padding: 0px;
+}
+
 #login {
 	width: 120px;
 	background-color: rgba(255,255,255,0.9);
@@ -181,7 +194,7 @@ ul.nav-bar {
 	background-color: #fca4c8;
 }
 
-/*========== LOGIN ========== */
+/*==========  ========== */
 .heading-1 {
 	margin: 20px 0px 10px 0px;
 }
