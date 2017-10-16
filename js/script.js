@@ -17,16 +17,19 @@ $(document).ready(function() {
     /* Shows edit profile div */
     $("#profile-settings").on("click", function() {
     	$(".edit-profile").slideToggle();
+    	$(".profile-container").hide();
     });
 
     /* Cancels edit profile div */
     $("#cancel-edit").on("click", function() {
+    	$(".profile-container").show();
     	$(".edit-profile").slideToggle();
     });
 
     /* Saves profile changes */
     $("#save-edit").on("click", function() {
     	// Validate inputs - to be done
+    	$(".profile-container").show();
     	$(".edit-profile").slideToggle();
     });
 

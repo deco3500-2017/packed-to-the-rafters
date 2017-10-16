@@ -11,6 +11,10 @@ body {
 	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
+textarea {
+	font-family: Arial;
+}
+
 .container {
 	display: table;
 	height: 100%;
@@ -310,6 +314,14 @@ ul.nav-bar {
 	border-radius: 15px;
 }
 
+#edit-interests, #edit-bio {
+	height: 80px;
+	width: 200px;
+	padding: 5px 10px;
+	line-height: 20px;
+	border: 1px solid #e5e5e5;
+	margin: 0;
+}
 /*========== EVENTS ========== */
 .events {
 	background-color: #efefef;
@@ -423,6 +435,8 @@ ul.nav-bar {
 
 #edit-cont-id {
 	margin-top: 70px;
+	background-color: #FFFFFF;
+	padding-bottom: 60px;
 }
 
 .edit-header li {
@@ -458,8 +472,7 @@ ul.nav-bar {
 
 #edit-profile-details {
 	width: 100%;
-	padding-top: 15px;
-	padding-left: 25px;
+	padding: 15px 15px 0px 25px;
 	border-top: 2px solid #e5e5e5;
 	margin-left: auto;
 	margin-right: auto;
@@ -476,8 +489,15 @@ ul.nav-bar {
 	font-size: 0.8em;
 }
 
-#edit-name, #edit-uname, #edit-email, #edit-password {
-	width: 220px;
+#edit-subheading {
+	font-size: 0.6em;
+	position: absolute;
+	bottom: -32px;
+	right: 22px;
+}
+
+#edit-name, #edit-uname, #edit-email, #edit-password, #edit-tags {
+	width: 210px;
 	border: 1px solid #e5e5e5;
 	margin: 0;
 	display: inline;
