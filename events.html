@@ -50,7 +50,7 @@
 			<table id="edit-profile-details">
 				<tr class="edit-details-line">
 					<td>
-						<h1 class="edit-profile-h1">Event Name</h1>
+						<h1 class="edit-profile-h1">Event Name <p class="required">*</p></h1> 
 					</td>
 					<td>
 						<input id="event-name" class="text-input general-input-fields" type="text" name="ename">
@@ -59,28 +59,29 @@
 
 				<tr class="edit-details-line">
 					<td>
-						<h1 class="edit-profile-h1">Time</h1>
+						<h1 class="edit-profile-h1">Time <p class="required">*</p></h1>
 					</td>
 					<td>
-						<input id="event-time" class="text-input general-input-fields" type="text" name="time">
-					</td>
-				</tr>
-
-				<tr class="edit-details-line">
-					<td>
-						<h1 class="edit-profile-h1">Date</h1>
-					</td>
-					<td>
-						<input id="event-date" class="text-input general-input-fields" type="text" name="date">
+						<input id="event-time" class="text-input general-input-fields" type="time" name="time" value='now'>
 					</td>
 				</tr>
 
 				<tr class="edit-details-line">
 					<td>
-						<h1 class="edit-profile-h1">Location</h1>
+						<h1 class="edit-profile-h1">Date <p class="required">*</p></h1>
+					</td>
+					<td>
+						<input id="event-date" class="text-input general-input-fields" type="date" name="date" value='now'>
+					</td>
+				</tr>
+
+				<tr class="edit-details-line">
+					<td>
+						<h1 class="edit-profile-h1">Location <p class="required">*</p></h1>
 					</td>
 					<td>
 						<input id="event-location" class="text-input general-input-fields" type="text" name="location">
+						<button id="geo-locate" type="submit" class="incased-button">here</button>
 					</td>
 				</tr>
 
