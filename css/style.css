@@ -124,6 +124,38 @@ ul.nav-bar {
 	height: 100vh;
 }
 
+/*=== DISCOVER ===*/
+.discover {
+	display: block;
+	position: absolute;
+	top: 14%;
+	width: 50%;
+	margin-left: 25%;
+	text-align: center;
+}
+
+.discover ul {
+	padding: 0;
+	margin: 0;
+}
+
+#discover-p {
+	margin: 0;
+	font-size: 1.4em;
+	font-weight: bolder;
+}
+
+.discover ul li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 10px 5px;
+	padding: 10px;
+	border-radius: 50%;
+	background-color: pink;
+	width: 20px;
+	height: 20px;
+}
+
 /*========== LOGIN / SIGNUP========== */
 .background {
 	background-image: url("../images/login-bg.jpg");
