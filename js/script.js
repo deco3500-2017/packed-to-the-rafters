@@ -13,4 +13,21 @@ $(document).ready(function() {
     $("#cancel").on("click", function() {
     	$(".create-event").slideToggle();
     });
+
+    /* Shows edit profile div */
+    $("#profile-settings").on("click", function() {
+    	$(".edit-profile").slideToggle();
+    });
+
+    /* Cancels edit profile div */
+    $("#cancel-edit").on("click", function() {
+    	$(".edit-profile").slideToggle();
+    });
+
+    /* Saves profile changes */
+    $("#save-edit").on("click", function() {
+    	// Validate inputs - to be done
+    	$(".edit-profile").slideToggle();
+    });
+
 });
