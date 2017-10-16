@@ -337,11 +337,23 @@ ul.nav-bar {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 118px;
+	width: 100px;
 	border-radius: 15px;
 	background-color: #ffadc9;
 	padding: 4px 12px;
 	font-size: 0.9em;
+	position: relative;
+}
+
+#add-event-plus {
+	position: absolute;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	right: -6px;
+	top: -6px;
+	font-size: 20px;
 }
 
 .card {
