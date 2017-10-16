@@ -20,7 +20,7 @@
 			</li>
 			<li>
 				<a href="map.html">
-					<img id="map" class="svg nav-btn-svg" src="images/icons/map.png" alt="Profile"/>
+					<img id="map" class="svg nav-btn-svg" src="images/icons/map.png" alt="Map"/>
 				</a>
 			</li>	
 			<li>
@@ -31,22 +31,98 @@
 		</ul>
 	</div>
 
+	<!-- Create Event -->
 	<div class="create-event">
+		<ul class="edit-header">
+			<li id="cancel-create">Cancel</li>
+			<li class="create-event-h1">Create New Event</li>
+			<li id="save-create">Done</li>
+		</ul>
 		<div id="create-event-cont-id" class="create-event-container">
-			<ul class="edit-header">
-				<li id="cancel-create">Cancel</li>
-				<li class="create-event-h1">Create New Event</li>
-				<li id="save-create">Done</li>
-			</ul>
+
+		<!-- Overlay -->
+		<div id="event-image">
+			<!-- Event Image -->
+			<div id="image-overlay"></div>
+			<p id="overlay-text">Choose Event Image</p>
+		</div>
+
+			<table id="edit-profile-details">
+				<tr class="edit-details-line">
+					<td>
+						<h1 class="edit-profile-h1">Event Name</h1>
+					</td>
+					<td>
+						<input id="event-name" class="text-input general-input-fields" type="text" name="ename">
+					</td>
+				</tr>
+
+				<tr class="edit-details-line">
+					<td>
+						<h1 class="edit-profile-h1">Time</h1>
+					</td>
+					<td>
+						<input id="event-time" class="text-input general-input-fields" type="text" name="time">
+					</td>
+				</tr>
+
+				<tr class="edit-details-line">
+					<td>
+						<h1 class="edit-profile-h1">Date</h1>
+					</td>
+					<td>
+						<input id="event-date" class="text-input general-input-fields" type="text" name="date">
+					</td>
+				</tr>
+
+				<tr class="edit-details-line">
+					<td>
+						<h1 class="edit-profile-h1">Location</h1>
+					</td>
+					<td>
+						<input id="event-location" class="text-input general-input-fields" type="text" name="location">
+					</td>
+				</tr>
+
+				<tr class="edit-details-line">
+					<td>
+						<h1 class="edit-profile-h1">Price</h1>
+					</td>
+					<td>
+						<input id="event-price" class="text-input general-input-fields" type="text" name="price">
+					</td>
+				</tr>
+
+				<tr class="edit-details-line">
+					<td>
+						<h1 class="edit-profile-h1">Description</h1>
+					</td>
+					<td>
+						<textarea id="event-desc" class="text-input" type="textarea" name="desc"></textarea>
+					</td>
+				</tr>
+
+				<tr class="edit-details-line">
+					<td>
+						<h1 class="edit-profile-h1">Event Tags</h1>
+					</td>
+					<td class="relative">
+						<input id="event-tags" class="text-input general-input-fields" type="text" name="etags">
+						<p id="events-subheading" class="edit-profile-h1">Separate with commas</p>
+					</td>
+				</tr>
+
+			</table>
 		</div>
 	</div>
+	<!-- END Create Event -->
 
 	<div class="events-container">
 	<h1 class="events-h1">Events</h1>
 	<div class="add-event"><span>Add New Event</span><i id="add-event-plus" class="fa fa-plus-circle"></i></div>
 	
 	<!-- Event Card -->
-	<div class="card">
+	<div id="card-1" class="card"> <!-- CARD 1 - ID needs replacing when functionality is implemented -->
 		<div class="card-image"></div>
 		<div class="card-info">
 		<h2 class="events-h2">Event Name</h2>
