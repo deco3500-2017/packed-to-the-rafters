@@ -327,10 +327,14 @@ ul.nav-bar {
 	background-color: #efefef;
 }
 
-.events-container {
+.events-container, .create-event-container {
 	width: 80%;
 	margin-left: 10%;
-	padding: 20px 0px 110px 0px;
+	padding: 10px 0px 110px 0px;
+}
+
+#create-event-cont-id {
+	margin-left: 0;
 }
 
 .add-event {
@@ -393,8 +397,16 @@ ul.nav-bar {
 	width: 90px;
 }
 
+.events-h1 {
+	font-size: 1.9em;
+}
+
 .events-h2 {
 	font-size: 1.0em;
+}
+
+.create-event-h1 {
+	font-size: 1.2em;
 }
 
 #events-tags {
@@ -425,7 +437,7 @@ ul.nav-bar {
 
 #cancel {
 	position: absolute;
-	top: 18px;
+	top: 40px;
 	right: 6%;
 	font-size: 1.3em;
 }
@@ -459,7 +471,7 @@ ul.nav-bar {
 }
 
 .edit-header li:nth-child(2) {
-	width: 170px;
+	width: 180px;
 }
 
 #edit-profile-pic {

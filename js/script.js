@@ -7,17 +7,32 @@ $(document).ready(function() {
     /* Shows create event div */
     $(".add-event").on("click", function() {
     	$(".create-event").slideToggle();
+    	$(".events-container").fadeOut();
     });
 
     /* Cancels create event */
     $("#cancel").on("click", function() {
+    	$(".events-container").show();
+    	$(".create-event").slideToggle();
+    });
+
+    /* Cancels create event div */
+    $("#cancel-create").on("click", function() {
+    	$(".events-container").show();
+    	$(".create-event").slideToggle();
+    });
+
+    /* Creates event */
+    $("#save-create").on("click", function() {
+    	// Validate inputs - to be done
+    	$(".events-container").show();
     	$(".create-event").slideToggle();
     });
 
     /* Shows edit profile div */
     $("#profile-settings").on("click", function() {
     	$(".edit-profile").slideToggle();
-    	$(".profile-container").hide();
+    	$(".profile-container").fadeOut();
     });
 
     /* Cancels edit profile div */
