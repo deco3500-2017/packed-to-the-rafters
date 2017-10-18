@@ -8,11 +8,12 @@ body {
 	height: 100%;
 	display: block;
 	margin: 0;
-	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 textarea {
-	font-family: Arial;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 8px;
 }
 
 .container {
@@ -39,8 +40,8 @@ textarea {
 .nav-container {
 	width: 100%;
 	height: 50px;
-	background-color: #FFFFFF;
-	border-top: 2px solid #e5e5e5;
+	background-color: #fdfdfd;
+	border-top: 2px solid #FFFFFF;
 	position: fixed;
 	bottom: 0;
 	z-index: 9999;
@@ -98,7 +99,7 @@ ul.nav-bar {
 	margin-right: auto;
 	display: block;
 	height: 32px;
-	font-size: 0.8em;
+	font-size: 12px;
 }
 
 #keyword {
@@ -132,7 +133,7 @@ ul.nav-bar {
 .discover {
 	display: block;
 	position: absolute;
-	top: 14%;
+	top: 80px;
 	width: 50%;
 	margin-left: 25%;
 	text-align: center;
@@ -155,7 +156,7 @@ ul.nav-bar {
 	margin: 10px 5px;
 	padding: 10px;
 	border-radius: 50%;
-	background-color: pink;
+	background-color: #00dd98;
 	width: 20px;
 	height: 20px;
 }
@@ -187,6 +188,10 @@ ul.nav-bar {
 	margin-top: 40px;
 }
 
+#uname::placeholder, #password::placeholder {
+	color: #090909;
+}
+
 .link {
 	font-style: italic;
 	color: #000000;
@@ -197,11 +202,15 @@ ul.nav-bar {
 }
 
 #signup p {
+	font-weight: lighter;
+	letter-spacing: 2px;
 	width: 80px;
-	background-color: rgba(255,255,255,0.7);
+	background-color: rgba(0,0,0,0.2);
+	text-decoration: underline;
 	border-radius: 10px;
 	padding: 5px;
 	font-size: 0.8em;
+	color: #FFFFFF;
 }
 
 .back-btn {
@@ -220,15 +229,17 @@ ul.nav-bar {
 
 #login {
 	width: 120px;
-	background-color: rgba(255,255,255,0.9);
+	background-color: #00dd98;
 	border-radius: 15px;
 	padding: 5px 15px;
 	border: 0;
-	font-size: 1.0em;
+	font-size: 0.8em;
+	color: #FFFFFF;
+	height: 28px;
 }
 
-#login:focus {
-	background-color: #fca4c8;
+#login:active {
+	background-color: rgba(0, 221, 152, 0.6);
 }
 
 /*==========  ========== */
@@ -237,14 +248,10 @@ ul.nav-bar {
 }
 
 /*========== PROFILE ========== */
-.profile {
-	background-color: #efefef;
-}
-
 .profile-container {
 	width: 80%;
 	position: absolute;
-	top: 18%;
+	top: 14%;
 	margin-left: 10%;
 	padding-bottom: 100px;
 }
@@ -260,22 +267,25 @@ ul.nav-bar {
 
 .main-p {
 	margin: 0;
-	padding-top: 10px;
+	padding-top: 5px;
 	color: #FFFFFF;
+	font-weight: bold;
 }
 
 .profile-h1 {
 	font-size: 0.9em;
+	margin-bottom: 0px;
 }
 
 .profile-p {
-	font-size: 0.9em;
+	font-size: 0.8em;
+	margin-top: 5px;
 }
 
 .profile-main-details {
 	padding-top: 60px;
 	text-align: center;
-	background-color: #ffadc9;
+	background-color: #00dd98;
 }
 
 .profile-minor-details {
@@ -288,7 +298,7 @@ ul.nav-bar {
 	margin-left: calc(50% - 60px);
 	top: -65px;
 	border-radius: 50%;
-	background-image: url("../images/profile-pic.jpg");
+	background-image: url("../images/profile/jaipaul.jpg");
 	background-size: cover;
 	display: block;
 	width: 120px;
@@ -305,14 +315,16 @@ ul.nav-bar {
 
 .tags {
 	padding: 0;
+	margin-top: 5px;
 }
 
 .tags li {
 	line-height: 30px;
 	display: inline;
-	background-color: #ffadc9;
+	background-color: #00dd98;
 	padding: 3px 12px;
 	border-radius: 15px;
+	font-size: 0.8em;
 }
 
 #edit-interests, #edit-bio, #event-desc {
@@ -322,9 +334,10 @@ ul.nav-bar {
 	line-height: 20px;
 	border: 1px solid #e5e5e5;
 	margin: 0;
+	font-size: 12px;
 }
 /*========== EVENTS ========== */
-.events {
+.events, .profile {
 	background-color: #efefef;
 }
 
@@ -344,9 +357,10 @@ ul.nav-bar {
 	margin-right: auto;
 	width: 100px;
 	border-radius: 15px;
-	background-color: #ffadc9;
+	background-color: #00dd98;
 	padding: 4px 12px;
-	font-size: 0.9em;
+	font-size: 0.8em;
+	color: #FFFFFF;
 	position: relative;
 }
 
@@ -355,7 +369,7 @@ ul.nav-bar {
 	width: 17px;
 	height: 17px;
 	border-radius: 50%;
-	background-color: #FFFFFF;
+	background-color: #00dd98;
 	right: -6px;
 	top: -6px;
 	font-size: 20px;
@@ -493,7 +507,7 @@ ul.nav-bar {
 	padding: 0;
 	display: table;
 	position: absolute;
-	border-bottom: 2px solid #e5e5e5;
+	border-bottom: 2px solid #f4f4f4;
 	background-color: #FFFFFF;
 	top: 0;
 	margin: 0;
@@ -520,7 +534,7 @@ ul.nav-bar {
 
 #edit-profile-pic {
 	border-radius: 50%;
-	background-image: url("../images/profile-pic.jpg");
+	background-image: url("../images/profile/jaipaul.jpg");
 	background-size: cover;
 	display: block;
 	width: 120px;
@@ -535,13 +549,13 @@ ul.nav-bar {
 	margin-left: auto;
 	margin-right: auto;
 	font-weight: bolder;
-	color: #ffadc9;
+	color: #00dd98;
 }
 
 #edit-profile-details {
 	width: 100%;
 	padding: 15px 15px 0px 25px;
-	border-top: 2px solid #e5e5e5;
+	border-top: 2px solid #f4f4f4;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -560,14 +574,15 @@ ul.nav-bar {
 #edit-subheading {
 	font-size: 0.6em;
 	position: absolute;
-	bottom: -32px;
+	bottom: -20px;
 	right: 22px;
+	width: auto;
 }
 
 #events-subheading {
 	font-size: 0.6em;
 	position: absolute;
-	bottom: -32px;
+	bottom: -20px;
 	right: 6px;
 }
 
@@ -576,6 +591,7 @@ ul.nav-bar {
 	border: 1px solid #e5e5e5;
 	margin: 0;
 	display: inline;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*========== INDIV EVENTS ========== */
