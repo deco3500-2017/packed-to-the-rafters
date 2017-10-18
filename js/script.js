@@ -134,4 +134,18 @@ $(document).ready(function() {
     $("#oktoberfest").on("click", function() {
         window.location.href = "indiv-events/oktoberfest.html";
     });
+
+    /* Adds select class to discover icons - for dev purposes only */
+    $(".discover ul li").on("click", function() {
+        var clicked = $(this).is("#discover-active")
+        
+        if (clicked) {
+            $(this).removeAttr('id');
+        }
+        else {
+            $(".discover ul li").removeAttr('id');
+            $(this).attr('id', 'discover-active');
+        };
+    });
+
 });

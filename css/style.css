@@ -161,6 +161,15 @@ ul.nav-bar {
 	height: 20px;
 }
 
+#discover-active {
+	width: 25px;
+	height: 25px;
+	background-color: rgba(255,255,255,0.5);
+	color: #00dd98;
+	border: 1px solid #00dd98;
+	font-size: 20px;
+}
+
 /*========== LOGIN / SIGNUP========== */
 .background {
 	background-image: url("../images/login-bg.jpg");
@@ -217,7 +226,8 @@ ul.nav-bar {
 	position: absolute;
 	top: 20px;
 	left: 20px;
-	background-color: #FFFFFF;
+	background-color: #00dd98;
+	color: #FFFFFF;
 	border-radius: 50%;
 	border: 0;
 	font-size: 1.8em;
@@ -365,6 +375,9 @@ ul.nav-bar {
 	font-size: 0.8em;
 	color: #FFFFFF;
 	position: relative;
+	-webkit-box-shadow: -2px 12px 10px -9px rgba(0,0,0,0.30);
+	-moz-box-shadow: -2px 12px 10px -9px rgba(0,0,0,0.30);
+	box-shadow: -2px 12px 10px -9px rgba(0,0,0,0.30);
 }
 
 #add-event-plus {
@@ -600,6 +613,7 @@ ul.nav-bar {
 	margin-right: auto;
 	font-weight: bolder;
 	color: #00dd98;
+	margin-top: 15px;
 }
 
 #edit-profile-details {
@@ -621,18 +635,15 @@ ul.nav-bar {
 	font-size: 0.8em;
 }
 
-#edit-subheading {
+#edit-subheading, #events-subheading {
 	font-size: 0.6em;
 	position: absolute;
-	bottom: -20px;
+	bottom: -27px;
 	right: 22px;
 	width: auto;
 }
 
 #events-subheading {
-	font-size: 0.6em;
-	position: absolute;
-	bottom: -20px;
 	right: 6px;
 }
 
@@ -706,12 +717,9 @@ ul.nav-bar {
   color: red;
 }
 
-.incased-button {
-	background-color: #ffadc9;
-	border: none;
-	border-radius: 8px;
-	display: inline;
-	margin-left: -50px;
-	height: 90%;
-	width: auto;
+#geo-locate {
+	color: #00dd98;
+	position: absolute;
+	right: 12px;
+	top: 12px;
 }
