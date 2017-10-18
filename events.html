@@ -41,9 +41,9 @@
 		<div id="create-event-cont-id" class="create-event-container">
 
 		<!-- Overlay -->
-		<div id="event-image">
+		<div id="create-event-image">
 			<!-- Event Image -->
-			<div id="image-overlay"></div>
+			<div class="image-overlay"></div>
 			<p id="overlay-text">Choose Event Image</p>
 		</div>
 
@@ -119,26 +119,89 @@
 	<!-- END Create Event -->
 
 	<div class="events-container">
+	<i id="search-event" class="fa fa-search" aria-hidden="true"></i>
 	<h1 class="events-h1">Events</h1>
 	<div class="add-event"><span>Add New Event</span><i id="add-event-plus" class="fa fa-plus-circle"></i></div>
 	
-	<!-- Event Card -->
-	<div id="card-1" class="card"> <!-- CARD 1 - ID needs replacing when functionality is implemented -->
-		<div class="card-image"></div>
+	<p class="event-separator">Recommended for you</p>
+
+	<!-- OKTOBERFEST -->
+	<div id="oktoberfest" class="card">
+		<!-- Event Image -->
+		<div class="event-image">
+			<img class="event-image-display" src="images/events/oktoberfest/oktoberfest1.jpg">
+		</div>
 		<div class="card-info">
-		<h2 class="events-h2">Event Name</h2>
+		<h2 class="events-h2">Oktoberfest</h2>
 			<ul class="card-info-details">
 				<li>
-					<p class="events-p">Brisbane, Australia</p>
-					<p class="events-p">$30</p>
+					<p class="events-p">Brisbane Showgrounds, Brisbane</p>
+					<p class="events-p">$24</p>
 				</li>
 				<li>
 					<p class="events-p">Currently here</p>
-					<p class="events-p">23 <i class="fa fa-users" aria-hidden="true"></i></p>
+					<p class="events-p">122 <i id="currently-here" class="fa fa-users" aria-hidden="true"></i></p>
 				</li>
 			</ul>
 			<div id="card-info-tags">
-				<p class="events-p">Tags</p>
+				<ul id="events-tags" class="tags">
+					<li>Germany</li>
+					<li>Beer</li>
+					<li>Alcohol</li>
+					<li>Festival</li>
+					<li>Cultural</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- OPEN AIR CINEMAS -->
+	<div class="card">
+		<!-- Event Image -->
+		<div class="event-image">
+			<img class="event-image-display" src="images/events/open-air/open-air1.jpg">
+		</div>
+		<div class="card-info">
+		<h2 class="events-h2">Open Air Cinemas</h2>
+			<ul class="card-info-details">
+				<li>
+					<p class="events-p">The Arbour, South Brisbane</p>
+					<p class="events-p">$20</p>
+				</li>
+				<li>
+					<p class="events-p">Currently here</p>
+					<p class="events-p">42 <i id="currently-here" class="fa fa-users" aria-hidden="true"></i></p>
+				</li>
+			</ul>
+			<div id="card-info-tags">
+				<ul id="events-tags" class="tags">
+					<li>Cinemas</li>
+					<li>Southbank</li>
+					<li>Tickets</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- EMPORIUM HOTEL -->
+	<div class="card">
+		<!-- Event Image -->
+		<div class="event-image">
+			<img class="event-image-display" src="images/events/emporium/emporium1.jpg">
+		</div>
+		<div class="card-info">
+		<h2 class="events-h2">Live Music at the Emporium Hotel</h2>
+			<ul class="card-info-details">
+				<li>
+					<p class="events-p">Fortitude Valley, Brisbane</p>
+					<p class="events-p">$0 +</p>
+				</li>
+				<li>
+					<p class="events-p">Currently here</p>
+					<p class="events-p">23 <i id="currently-here" class="fa fa-users" aria-hidden="true"></i></p>
+				</li>
+			</ul>
+			<div id="card-info-tags">
 				<ul id="events-tags" class="tags">
 					<li>Tag 1</li>
 					<li>Tag 1</li>
@@ -149,59 +212,37 @@
 		</div>
 	</div>
 
-	<!-- Event Card -->
+	<p class="event-separator">Others Events in The Area</p>
+
+	<!-- EMPORIUM HOTEL -->
 	<div class="card">
-		<div class="card-image"></div>
+		<!-- Event Image -->
+		<div class="event-image">
+			<img class="event-image-display" src="images/events/chakradance/chakradance1.jpg">
+		</div>
 		<div class="card-info">
-		<h2 class="events-h2">Event Name</h2>
+		<h2 class="events-h2">Full Moon Chakradance Circle</h2>
 			<ul class="card-info-details">
 				<li>
-					<p class="events-p">Brisbane, Australia</p>
-					<p class="events-p">$30</p>
+					<p class="events-p">Annerley, Brisbane</p>
+					<p class="events-p">$0 +</p>
 				</li>
 				<li>
 					<p class="events-p">Currently here</p>
-					<p class="events-p">23 <i class="fa fa-users" aria-hidden="true"></i></p>
+					<p class="events-p">9 <i id="currently-here" class="fa fa-users" aria-hidden="true"></i></p>
 				</li>
 			</ul>
 			<div id="card-info-tags">
-				<p class="events-p">Tags</p>
 				<ul id="events-tags" class="tags">
-					<li>Tag 1</li>
-					<li>Tag 1</li>
-					<li>Tag 1</li>
-					<li>Tag 1</li>
+					<li>Chakra</li>
+					<li>Dance</li>
+					<li>Spiritual</li>
+					<li>Enlightenment</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 
-	<!-- Event Card -->
-	<div class="card">
-		<div class="card-image"></div>
-		<div class="card-info">
-		<h2 class="events-h2">Event Name</h2>
-			<ul class="card-info-details">
-				<li>
-					<p class="events-p">Brisbane, Australia</p>
-					<p class="events-p">$30</p>
-				</li>
-				<li>
-					<p class="events-p">Currently here</p>
-					<p class="events-p">23 <i class="fa fa-users" aria-hidden="true"></i></p>
-				</li>
-			</ul>
-			<div id="card-info-tags">
-				<p class="events-p">Tags</p>
-				<ul id="events-tags" class="tags">
-					<li>Tag 1</li>
-					<li>Tag 1</li>
-					<li>Tag 1</li>
-					<li>Tag 1</li>
-				</ul>
-			</div>
-		</div>
-	</div>
 	</div>
 
 </body>

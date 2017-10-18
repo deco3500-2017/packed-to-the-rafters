@@ -130,8 +130,8 @@ $(document).ready(function() {
     	$(".edit-profile").slideToggle();
     });
 
-    /* Redirects to individual event page */
-    $("#card-1").on("click", function() {
-        window.location.href = "indiv-events/event1.html";
+    /* Redirects to Oktoberfest card */
+    $("#oktoberfest").on("click", function() {
+        window.location.href = "indiv-events/oktoberfest.html";
     });
 });
