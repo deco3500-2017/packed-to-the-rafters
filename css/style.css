@@ -484,6 +484,13 @@ ul.nav-bar {
 	right: 0px;
 	font-size: 24px;
 }
+
+#geo-locate {
+	color: #00dd98;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+}
 /*========== CREATE EVENT ========== */
 .create-event, .edit-profile {
 	width: 100%;
@@ -561,6 +568,12 @@ ul.nav-bar {
 	position: absolute;
 	top: 60px;
 	margin: 0px 0px 0px 20%;
+}
+
+.required {
+	color: #00dd98;
+	margin: 0 2px 0 0;
+	display: inline;
 }
 /*========== EDIT PROFILE ========== */
 .edit-header {
@@ -647,7 +660,7 @@ ul.nav-bar {
 }
 
 .general-input-fields {
-	width: 210px;
+	width: 90%;
 	border: 1px solid #e5e5e5;
 	margin: 0;
 	display: inline;
@@ -828,11 +841,4 @@ ul.nav-bar {
 	background-color: #00dd98;
 	border-radius: 50%;
 	font-size: 6px;
-}
-
-#geo-locate {
-	color: #00dd98;
-	position: absolute;
-	right: 12px;
-	top: 12px;
 }
