@@ -2,12 +2,16 @@
 <html>
 <head>
 	<title>Travel Pack</title>
+	<!-- Google Font - Montserrat | REF: http://bit.ly/2xQ4KNM -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+	<!-- Font Awesome | REF: http://fontawesome.io/license/ -->
 	<script src="https://use.fontawesome.com/9f0f64771e.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- jQuery plugings | REF: https://jquery.com/ -->
+	<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>	
     <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
 </head>
 <body class="events">
     <!-- Navigation Bar -->
@@ -50,7 +54,8 @@
 			<table id="edit-profile-details">
 				<tr class="edit-details-line">
 					<td>
-						<h1 class="edit-profile-h1">Event Name <p class="required">*</p></h1> 
+						<p class="required">*</p>
+						<h1 class="edit-profile-h1">Event Name</h1> 
 					</td>
 					<td>
 						<input id="event-name" class="text-input general-input-fields" type="text" name="ename">
@@ -59,7 +64,8 @@
 
 				<tr class="edit-details-line">
 					<td>
-						<h1 class="edit-profile-h1">Time <p class="required">*</p></h1>
+						<p class="required">*</p>
+						<h1 class="edit-profile-h1">Time</h1>
 					</td>
 					<td>
 						<input id="event-time" class="text-input general-input-fields" type="time" name="time" value='now'>
@@ -68,7 +74,8 @@
 
 				<tr class="edit-details-line">
 					<td>
-						<h1 class="edit-profile-h1">Date <p class="required">*</p></h1>
+						<p class="required">*</p>
+						<h1 class="edit-profile-h1">Date</h1>
 					</td>
 					<td>
 						<input id="event-date" class="text-input general-input-fields" type="date" name="date" value='now'>
@@ -77,11 +84,14 @@
 
 				<tr class="edit-details-line">
 					<td>
-						<h1 class="edit-profile-h1">Location <p class="required">*</p></h1>
+						<p class="required">*</p>
+						<h1 class="edit-profile-h1">Location</h1>
 					</td>
-					<td class="relative">
-						<input id="event-location" class="text-input general-input-fields" type="text" name="location">
-						<i id="geo-locate" class="fa fa-location-arrow" aria-hidden="true"></i>
+					<td>
+						<div class="relative">
+							<input id="event-location" class="text-input general-input-fields" type="text" name="location">
+							<i id="geo-locate" class="fa fa-location-arrow" aria-hidden="true"></i>
+						</div>
 					</td>
 				</tr>
 
@@ -147,7 +157,7 @@
 				<ul id="events-tags" class="tags">
 					<li>Germany</li>
 					<li>Beer</li>
-					<li>Alcohol</li>
+					<li>Drinking</li>
 					<li>Festival</li>
 					<li>Cultural</li>
 				</ul>
@@ -206,7 +216,7 @@
 					<li>Music</li>
 					<li>Band</li>
 					<li>Food</li>
-					<li>Drinks</li>
+					<li>Drinking</li>
 					<li>Live</li>
 				</ul>
 			</div>
@@ -245,6 +255,7 @@
 	</div>
 
 	</div>
+
 
 </body>
 </html>

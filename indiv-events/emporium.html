@@ -2,19 +2,33 @@
 <html>
 <head>
 	<title>Travel Pack</title>
+	<!-- Slick Slider | REF: http://kenwheeler.github.io/slick/#go-get-it -->
+	<link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+	<!-- Font Awesome | REF: http://fontawesome.io/license/ -->
 	<script src="https://use.fontawesome.com/9f0f64771e.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- jQuery plugings | REF: https://jquery.com/ -->
 	<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
-	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>	
     <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
 </head>
 <body class="indiv-event">
     
     <a href="../events.html"><button class="back-btn"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button></a>
 	<!-- Event Image -->
 	<div class="indiv-event-image">
-		<img class="event-image-display" src="../images/events/emporium/emporium1.jpg">
+		<div>
+			<img src="../images/events/emporium/emporium3.jpg">
+		</div>
+		<div>
+			<img src="../images/events/emporium/emporium1.jpg">
+		</div>
+		<div>
+			<img src="../images/events/emporium/emporium2.jpg">
+		</div>
 	</div>
 			
 	</div>
@@ -53,5 +67,25 @@
 
 	</div>
 
+	<!-- START Slick Slider | REF: http://kenwheeler.github.io/slick/#go-get-it -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="../slick/slick.min.js"></script>	
+
+	<script>
+	$(document).ready(function(){
+	  $('.indiv-event-image').slick({
+			dots: true,
+		    prevArrow: false,
+		    nextArrow: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			centerMode: true,
+			variableWidth: true
+	  });
+	});
+	</script>	
+	<!-- END Slick Slider -->
 </body>
 </html>

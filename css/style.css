@@ -131,7 +131,6 @@ ul.nav-bar {
 
 /*=== DISCOVER ===*/
 .discover {
-	display: block;
 	position: absolute;
 	top: 80px;
 	width: 50%;
@@ -142,6 +141,8 @@ ul.nav-bar {
 .discover ul {
 	padding: 0;
 	margin: 0;
+	display: inline-table;
+	table-layout: fixed;
 }
 
 #discover-p {
@@ -152,13 +153,19 @@ ul.nav-bar {
 
 .discover ul li {
 	list-style-type: none;
-	display: inline-block;
-	margin: 10px 5px;
+	display: table-cell;
+	vertical-align: middle;
+	width: 50px;
+	height: 80px;
+}
+
+.discover ul li div {
 	padding: 10px;
 	border-radius: 50%;
 	background-color: #00dd98;
 	width: 20px;
 	height: 20px;
+	display: inline-block;
 }
 
 #discover-active {
@@ -422,7 +429,7 @@ ul.nav-bar {
 }
 
 .card-info-details li:nth-child(1) {
-	width: 150px;
+	width: 55%;
 }
 
 .card-info-details li:nth-child(2) {
@@ -505,6 +512,7 @@ ul.nav-bar {
 	margin-top: 50px;
 	padding-top: 0px;
 	width: 100%;
+	background-color: #FFFFFF;
 }
 
 #create-event-image {
@@ -528,16 +536,7 @@ ul.nav-bar {
 .create-event-image, .event-image {
 	height: 140px;
 	width: 100%;
-	position: relative;
 	overflow: hidden;
-}
-
-.event-image-display {
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   -webkit-transform: translateY(-50%) translateX(-50%);
-   width: 100%;
 }
 
 .image-overlay {
@@ -631,7 +630,7 @@ ul.nav-bar {
 .edit-profile-h1 {
 	margin: 0;
 	width: 100px;
-	display: inline-block;
+	display: inline;
 	font-size: 0.8em;
 }
 
@@ -719,6 +718,10 @@ ul.nav-bar {
 	width: 240px;
 }
 
+.event-buttons div {
+	text-align: center;
+}
+
 .indiv-event-btn {
 	border: none;
 	height: auto;
@@ -768,11 +771,63 @@ ul.nav-bar {
 	background-color: #FFFFFF;
 }
 
-.required {
-	display: inline;
-	float: right;
-  margin: 0px;
-  color: red;
+.indiv-event-image {
+	height: 200px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.create-event-image, .event-image {
+	height: 140px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.event-image-display {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   -webkit-transform: translateY(-50%) translateX(-50%);
+   width: 100%;
+}
+
+/* Slick configurations */
+.slick-slide img {
+    vertical-align: middle;
+    display: inline-block;
+    width: 375px;
+}
+
+.slick-dots {
+	bottom: 10px;
+}
+
+.slick-dots li {
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	width: 10px;
+	height: 10px;
+	margin: 0px 2px;
+}
+
+.slick-dots li button {
+	width: 10px;
+	height: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+	color: rgba(0,0,0,0);
+}
+
+.slick-dots li button:before {
+	line-height: 10px;
+	width: 10px;
+	height: 10px;
+	background-color: #00dd98;
+	border-radius: 50%;
+	font-size: 6px;
 }
 
 #geo-locate {

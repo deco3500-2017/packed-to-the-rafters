@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	/* Redirects to map page */
+    /* Redirects to map page */
     $("#login").on("click", function() {
     	window.location.href = "map.html";
     });
@@ -148,14 +148,14 @@ $(document).ready(function() {
     });
 
     /* Adds select class to discover icons - for dev purposes only */
-    $(".discover ul li").on("click", function() {
+    $(".discover ul li div").on("click", function() {
         var clicked = $(this).is("#discover-active")
         
         if (clicked) {
             $(this).removeAttr('id');
         }
         else {
-            $(".discover ul li").removeAttr('id');
+            $(".discover ul li div").removeAttr('id');
             $(this).attr('id', 'discover-active');
         };
     });
