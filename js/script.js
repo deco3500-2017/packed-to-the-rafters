@@ -111,6 +111,54 @@ $(document).ready(function() {
         
     });
 
+    /* Shows Oktoberfest chat */
+    $("#okt-icon").on("click", function() {
+        $("#oktoberfest-chat").slideToggle();
+        $(".details-cont").fadeOut();
+    });
+
+    /* Hides Oktoberfest chat */
+    $("#okt-chat-back").on("click", function() {
+        $(".details-cont").show();
+        $("#oktoberfest-chat").slideToggle();
+    });
+
+    /* Shows Chakradance chat */
+    $("#chakradance-icon").on("click", function() {
+        $("#chakradance-chat").slideToggle();
+        $(".details-cont").fadeOut();
+    });
+
+    /* Hides Chakradance chat */
+    $("#chakradance-chat-back").on("click", function() {
+        $(".details-cont").show();
+        $("#chakradance-chat").slideToggle();
+    });
+
+    /* Shows Emporium chat */
+    $("#emporium-icon").on("click", function() {
+        $("#emporium-chat").slideToggle();
+        $(".details-cont").fadeOut();
+    });
+
+    /* Hides Oktoberfest chat */
+    $("#emporium-chat-back").on("click", function() {
+        $(".details-cont").show();
+        $("#emporium-chat").slideToggle();
+    });
+
+    /* Shows Open Air chat */
+    $("#open-air-icon").on("click", function() {
+        $("#open-air-chat").slideToggle();
+        $(".details-cont").fadeOut();
+    });
+
+    /* Hides Open Air chat */
+    $("#open-air-chat-back").on("click", function() {
+        $(".details-cont").show();
+        $("#open-air-chat").slideToggle();
+    });
+
     /* Shows edit profile div */
     $("#profile-settings").on("click", function() {
     	$(".edit-profile").slideToggle();
