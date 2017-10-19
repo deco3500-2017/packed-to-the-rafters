@@ -134,6 +134,18 @@ $(document).ready(function() {
     $("#oktoberfest").on("click", function() {
         window.location.href = "indiv-events/oktoberfest.html";
     });
+    /* Redirects to Open Air card */
+    $("#open-air").on("click", function() {
+        window.location.href = "indiv-events/open-air.html";
+    });
+    /* Redirects to Emporium card */
+    $("#emporium").on("click", function() {
+        window.location.href = "indiv-events/emporium.html";
+    });
+    /* Redirects to Chakradance card */
+    $("#chakradance").on("click", function() {
+        window.location.href = "indiv-events/chakradance.html";
+    });
 
     /* Adds select class to discover icons - for dev purposes only */
     $(".discover ul li").on("click", function() {
