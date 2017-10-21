@@ -22,15 +22,77 @@ $(document).ready(function() {
     	$(".create-event").slideToggle();
     });
 
+    /* Shows the location selector div */
+    $("#event-location").on("focus", function(){
+      $("#locationSelector").slideToggle();
+      $(".events-container").fadeOut();
+    });
+
+    /* Hides the location selector div */
+    $("#locations-back-btn").on("click", function(){
+      $("#locationSelector").slideToggle();
+    });
+
+    /* Adding the long and lat to the location input box when location is selected */
+    $("#location-1").on("click", function(){
+      $("#locationSelector").slideToggle();
+      $("#event-location").val("‎-27.470125 153.021072");
+    });
+
+    $("#location-2").on("click", function(){
+      $("#locationSelector").slideToggle();
+      $("#event-location").val("‎-27.469522 153.025214");
+    });
+
+    $("#location-3").on("click", function(){
+      $("#locationSelector").slideToggle();
+      $("#event-location").val("‎-27.468772 153.023466");
+    });
+
+    $("#location-4").on("click", function(){
+      $("#locationSelector").slideToggle();
+      $("#event-location").val("‎-27.465557 153.035808");
+    });
+
+    $("#location-5").on("click", function(){
+      $("#locationSelector").slideToggle();
+      $("#event-location").val("‎-27.463564 153.039336");
+    });
+
+    $("#location-6").on("click", function(){
+      $("#locationSelector").slideToggle();
+      $("#event-location").val("‎-27.480488 153.032832");
+    });
+
+    $("#location-7").on("click", function(){
+      $("#locationSelector").slideToggle();
+      $("#event-location").val("‎-27.485533 153.038032");
+    });
+
+    $("#location-8").on("click", function(){
+      $("#locationSelector").slideToggle();
+      $("#event-location").val("‎-27.476393 153.022230");
+    });
+
+    $("#location-9").on("click", function(){
+      $("#locationSelector").slideToggle();
+      $("#event-location").val("‎-27.475075 153.020913");
+    });
+
+    $("#location-10").on("click", function(){
+      $("#locationSelector").slideToggle();
+      $("#event-location").val("‎-27.470430 153.016971");
+    });
+
     // Adds a new event to the text document
     // The text document is used to simulate event adding
-    /// IMPORTANT ADD Jquery code and see if you can work 
+    /// IMPORTANT ADD Jquery code and see if you can work
     //  around ajax's stupid protocols for local storage
     function writeToFile(_name, _date, _time, _lat, _long, _price, _desc, _tags){
         //alert(_name);
         /*var fso = new ActiveXObject("Scripting.FileSystemObject");
         var myFile = fso.OpenTextFile("data/data.txt", 8, false, 0);
-        myFile.WriteLine(_name + ':' + _date + ':' + _time + ':' 
+        myFile.WriteLine(_name + ':' + _date + ':' + _time + ':'
             + _lat + ':' + _long + ':' + _price + ':' + _desc + _tags);
         myFile.Close();*/
         //$.post("./php/writeText.php", function(data){
@@ -62,8 +124,8 @@ $(document).ready(function() {
         if (!$("#event-time").val()) {
             alert("Event time cannot be empty");
             return;
-        } 
-        /* Don't check if time is in the past. due to all events 
+        }
+        /* Don't check if time is in the past. due to all events
         that are within todays date are being plotted */
         var eventTime = $("#event-time").val();
 
@@ -105,10 +167,10 @@ $(document).ready(function() {
         if (navigator.geolocation) {
             //$("#event-location").val(position.coords.latitude + ' ' + position.coords.longitude);
             navigator.geolocation.getCurrentPosition(showPosition);
-        } else { 
+        } else {
             x.innerHTML = "Geolocation is not supported by this browser.";
         }
-        
+
     });
 
     /* Shows edit profile div */
@@ -138,7 +200,7 @@ $(document).ready(function() {
     /* Adds select class to discover icons - for dev purposes only */
     $(".discover ul li").on("click", function() {
         var clicked = $(this).is("#discover-active")
-        
+
         if (clicked) {
             $(this).removeAttr('id');
         }

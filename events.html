@@ -22,12 +22,12 @@
 				<a href="map.html">
 					<img id="map" class="svg nav-btn-svg" src="images/icons/map.png" alt="Map"/>
 				</a>
-			</li>	
+			</li>
 			<li>
 				<a href="profile.html">
 					<img id="profile" class="svg nav-btn-svg" src="images/icons/profile.png" alt="Profile"/>
 				</a>
-			</li>	
+			</li>
 		</ul>
 	</div>
 
@@ -50,7 +50,7 @@
 			<table id="edit-profile-details">
 				<tr class="edit-details-line">
 					<td>
-						<h1 class="edit-profile-h1">Event Name <p class="required">*</p></h1> 
+						<h1 class="edit-profile-h1">Event Name <p class="required">*</p></h1>
 					</td>
 					<td>
 						<input id="event-name" class="text-input general-input-fields" type="text" name="ename">
@@ -118,11 +118,36 @@
 	</div>
 	<!-- END Create Event -->
 
+	<!--START Location Selector Screen -->
+	<div id="locationSelector">
+		<button class="back-btn" id="locations-back-btn"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button>
+		<div class="locations-container">
+			<h1 class="location-h1">Location</h1>
+			<div class="search-box-location">
+				<input id="keyword" class="text-input" type="text" name="keyword" placeholder="Search..."><input class="search-btn" type="submit" value="Submit">
+			</div>
+			<div id="suggested-locations">
+				<ul>
+					<li id="location-1"><b>Brisbane</b><br><i>Brisbane, Queensland Australia</i></li>
+					<li id="location-2"><b>Queen Street Mall</b><br><i>Brisbane, Queensland Australia</i></li>
+					<li id="location-3"><b>Brisbane City Hall</b><br><i>King George Square</i></li>
+					<li id="location-4"><b>Story Bridge</b><br><i>Brisbane City, Queensland</i></li>
+					<li id="location-5"><b>Wilson Outlook Reserve</b><br><i>231 Bowen Terrace, New Farm, Qld</i></li>
+					<li id="location-6"><b>Kangaroo Point</b><br><i>Brisbane, Queensland</i></li>
+					<li id="location-7"><b>The Gabba</b><br><i>Vulture St, Woolloongabba,Qld</i></li>
+					<li id="location-8"><b>South Bank Parklands</b><br><i>SoutBrisbane, Queensland</i></li>
+					<li id="location-9"><b>The Wheel of Brisbane</b><br><i>South Brisbane, Queensland</i></li>
+					<li id="location-10"><b>GOMA Gallery of Modern Art</b><br><i>Stanley Pl, South Brisbane, Qld</i></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
 	<div class="events-container">
 	<i id="search-event" class="fa fa-search" aria-hidden="true"></i>
 	<h1 class="events-h1">Events</h1>
 	<div class="add-event"><span>Add New Event</span><img id="add-event-plus" src="images/plus.png"></div>
-	
+
 	<p class="event-separator">Recommended for you</p>
 
 	<!-- OKTOBERFEST -->
