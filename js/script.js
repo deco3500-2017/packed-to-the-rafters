@@ -33,8 +33,12 @@ $(document).ready(function() {
         myFile.WriteLine(_name + ':' + _date + ':' + _time + ':' 
             + _lat + ':' + _long + ':' + _price + ':' + _desc + _tags);
         myFile.Close();*/
-        //$.post("./php/writeText.php", function(data){
-        //});
+        $.ajax({
+            url: './php/writeText.php',
+            type: 'GET',
+            data: { "callFunc1": "1"},
+            success: function(response) { alert(response); }
+        });
     }
 
     /* Creates event */
