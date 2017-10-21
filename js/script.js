@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	/* Redirects to map page */
+    /* Redirects to map page */
     $("#login").on("click", function() {
     	window.location.href = "map.html";
     });
@@ -95,8 +95,12 @@ $(document).ready(function() {
         myFile.WriteLine(_name + ':' + _date + ':' + _time + ':'
             + _lat + ':' + _long + ':' + _price + ':' + _desc + _tags);
         myFile.Close();*/
-        //$.post("./php/writeText.php", function(data){
-        //});
+        $.ajax({
+            url: './php/writeText.php',
+            type: 'GET',
+            data: { "callFunc1": "1"},
+            success: function(response) { alert(response); }
+        });
     }
 
     /* Creates event */
@@ -173,6 +177,54 @@ $(document).ready(function() {
 
     });
 
+    /* Shows Oktoberfest chat */
+    $("#okt-icon").on("click", function() {
+        $("#oktoberfest-chat").slideToggle();
+        $(".details-cont").fadeOut();
+    });
+
+    /* Hides Oktoberfest chat */
+    $("#okt-chat-back").on("click", function() {
+        $(".details-cont").show();
+        $("#oktoberfest-chat").slideToggle();
+    });
+
+    /* Shows Chakradance chat */
+    $("#chakradance-icon").on("click", function() {
+        $("#chakradance-chat").slideToggle();
+        $(".details-cont").fadeOut();
+    });
+
+    /* Hides Chakradance chat */
+    $("#chakradance-chat-back").on("click", function() {
+        $(".details-cont").show();
+        $("#chakradance-chat").slideToggle();
+    });
+
+    /* Shows Emporium chat */
+    $("#emporium-icon").on("click", function() {
+        $("#emporium-chat").slideToggle();
+        $(".details-cont").fadeOut();
+    });
+
+    /* Hides Oktoberfest chat */
+    $("#emporium-chat-back").on("click", function() {
+        $(".details-cont").show();
+        $("#emporium-chat").slideToggle();
+    });
+
+    /* Shows Open Air chat */
+    $("#open-air-icon").on("click", function() {
+        $("#open-air-chat").slideToggle();
+        $(".details-cont").fadeOut();
+    });
+
+    /* Hides Open Air chat */
+    $("#open-air-chat-back").on("click", function() {
+        $(".details-cont").show();
+        $("#open-air-chat").slideToggle();
+    });
+
     /* Shows edit profile div */
     $("#profile-settings").on("click", function() {
     	$(".edit-profile").slideToggle();
@@ -196,16 +248,28 @@ $(document).ready(function() {
     $("#oktoberfest").on("click", function() {
         window.location.href = "indiv-events/oktoberfest.html";
     });
+    /* Redirects to Open Air card */
+    $("#open-air").on("click", function() {
+        window.location.href = "indiv-events/open-air.html";
+    });
+    /* Redirects to Emporium card */
+    $("#emporium").on("click", function() {
+        window.location.href = "indiv-events/emporium.html";
+    });
+    /* Redirects to Chakradance card */
+    $("#chakradance").on("click", function() {
+        window.location.href = "indiv-events/chakradance.html";
+    });
 
     /* Adds select class to discover icons - for dev purposes only */
-    $(".discover ul li").on("click", function() {
+    $(".discover ul li div").on("click", function() {
         var clicked = $(this).is("#discover-active")
 
         if (clicked) {
             $(this).removeAttr('id');
         }
         else {
-            $(".discover ul li").removeAttr('id');
+            $(".discover ul li div").removeAttr('id');
             $(this).attr('id', 'discover-active');
         };
     });

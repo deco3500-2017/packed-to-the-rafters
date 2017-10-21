@@ -131,7 +131,6 @@ ul.nav-bar {
 
 /*=== DISCOVER ===*/
 .discover {
-	display: block;
 	position: absolute;
 	top: 80px;
 	width: 50%;
@@ -142,6 +141,8 @@ ul.nav-bar {
 .discover ul {
 	padding: 0;
 	margin: 0;
+	display: inline-table;
+	table-layout: fixed;
 }
 
 #discover-p {
@@ -152,13 +153,19 @@ ul.nav-bar {
 
 .discover ul li {
 	list-style-type: none;
-	display: inline-block;
-	margin: 10px 5px;
+	display: table-cell;
+	vertical-align: middle;
+	width: 50px;
+	height: 80px;
+}
+
+.discover ul li div {
 	padding: 10px;
 	border-radius: 50%;
 	background-color: #00dd98;
 	width: 20px;
 	height: 20px;
+	display: inline-block;
 }
 
 #discover-active {
@@ -329,7 +336,7 @@ ul.nav-bar {
 	margin-top: 5px;
 }
 
-.tags li {
+.tags li, .indiv-event-btn {
 	line-height: 30px;
 	display: inline;
 	background: linear-gradient(to right, #00dd98 , #06d8b9);
@@ -341,7 +348,7 @@ ul.nav-bar {
 
 #edit-interests, #edit-bio, #event-desc {
 	height: 80px;
-	width: 200px;
+	width: 86%;
 	padding: 5px 10px;
 	line-height: 20px;
 	border: 1px solid #e5e5e5;
@@ -422,7 +429,7 @@ ul.nav-bar {
 }
 
 .card-info-details li:nth-child(1) {
-	width: 150px;
+	width: 55%;
 }
 
 .card-info-details li:nth-child(2) {
@@ -477,8 +484,15 @@ ul.nav-bar {
 	right: 0px;
 	font-size: 24px;
 }
+
+#geo-locate {
+	color: #00dd98;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+}
 /*========== CREATE EVENT ========== */
-.create-event, .edit-profile {
+.create-event, .edit-profile, .chat-scr {
 	width: 100%;
 	height: 100%;
 	display: none;
@@ -505,6 +519,7 @@ ul.nav-bar {
 	margin-top: 50px;
 	padding-top: 0px;
 	width: 100%;
+	background-color: #FFFFFF;
 }
 
 #create-event-image {
@@ -525,19 +540,14 @@ ul.nav-bar {
 	overflow: hidden;
 }
 
+.chat-scr img {
+	width: 100%;
+}
+
 .create-event-image, .event-image {
 	height: 140px;
 	width: 100%;
-	position: relative;
 	overflow: hidden;
-}
-
-.event-image-display {
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   -webkit-transform: translateY(-50%) translateX(-50%);
-   width: 100%;
 }
 
 .image-overlay {
@@ -562,6 +572,12 @@ ul.nav-bar {
 	position: absolute;
 	top: 60px;
 	margin: 0px 0px 0px 20%;
+}
+
+.required {
+	color: #00dd98;
+	margin: 0 2px 0 0;
+	display: inline;
 }
 /*========== EDIT PROFILE ========== */
 .edit-header {
@@ -631,7 +647,7 @@ ul.nav-bar {
 .edit-profile-h1 {
 	margin: 0;
 	width: 100px;
-	display: inline-block;
+	display: inline;
 	font-size: 0.8em;
 }
 
@@ -648,7 +664,7 @@ ul.nav-bar {
 }
 
 .general-input-fields {
-	width: 210px;
+	width: 90%;
 	border: 1px solid #e5e5e5;
 	margin: 0;
 	display: inline;
@@ -660,6 +676,34 @@ ul.nav-bar {
 	background-color: #e5e5e5;
 }
 
+#currently-here-imgs {
+	position: absolute;
+	top: -20px;
+	left: 15px;
+	width: 200px
+}
+
+#currently-here-imgs img {
+	display: inline;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	border: 1px solid rgba(0,0,0,0.1);
+	margin: 0px 2px;
+}
+
+#currently-here-plus {
+	position: absolute;
+	right: 15px;
+	top: 8px;
+	color: #FFFFFF;
+	font-size: 11px;
+	background-color: #00dd98;
+	padding: 10px 5px;
+	border-radius: 50%;
+	text-align: center;
+}
+
 .details-cont {
 	width: 80%;
 	margin-top: 6%;
@@ -669,12 +713,46 @@ ul.nav-bar {
 	padding-bottom: 90px;
 }
 
+.chat-icon {
+	position: absolute;
+	text-align: center;
+	padding: 5px;
+	width: 35px;
+	height: 35px;
+	top: 22px;
+	right: 22px;
+	background-color: #00dd98;
+	color: #FFFFFF;
+	font-size: 26px;
+	border-radius: 50%;
+}
+
 .event-buttons {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 25px;
-	width: 80%;
+	width: 240px;
+}
+
+.event-buttons div {
+	text-align: center;
+}
+
+.indiv-event-btn {
+	border: none;
+	height: auto;
+	line-height: 20px;
+	margin: 0px 5px;
+	-webkit-box-shadow: -2px 12px 10px -9px rgba(0,0,0,0.2);
+	-moz-box-shadow: -2px 12px 10px -9px rgba(0,0,0,0.2);
+	box-shadow: -2px 12px 10px -9px rgba(0,0,0,0.2);
+}
+
+#not-inter {
+	background: none;
+	background-color: #d8d8d8;
+	color: #9e9e9e;
 }
 
 #indiv-event-img {
@@ -706,15 +784,15 @@ ul.nav-bar {
 }
 
 .event-details {
-	padding: 35px 20px 25px 20px;
+	padding: 45px 20px 25px 20px;
 	background-color: #FFFFFF;
 }
 
-.required {
-	display: inline;
-	float: right;
-  margin: 0px;
-  color: red;
+.indiv-event-image {
+	height: 200px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
 }
 
 #geo-locate {
@@ -722,6 +800,58 @@ ul.nav-bar {
 	position: absolute;
 	right: 12px;
 	top: 12px;
+}
+
+.create-event-image, .event-image {
+	height: 140px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.event-image-display {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   -webkit-transform: translateY(-50%) translateX(-50%);
+   width: 100%;
+}
+
+/* Slick configurations */
+.slick-slide img {
+    vertical-align: middle;
+    display: inline-block;
+    width: 375px;
+}
+
+.slick-dots {
+	bottom: 10px;
+}
+
+.slick-dots li {
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	width: 10px;
+	height: 10px;
+	margin: 0px 2px;
+}
+
+.slick-dots li button {
+	width: 10px;
+	height: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+	color: rgba(0,0,0,0);
+}
+
+.slick-dots li button:before {
+	line-height: 10px;
+	width: 10px;
+	height: 10px;
+	background-color: #00dd98;
+	border-radius: 50%;
+	font-size: 6px;
 }
 
 /* Location selector*/
