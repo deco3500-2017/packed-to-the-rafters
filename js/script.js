@@ -1,26 +1,6 @@
 $(document).ready(function() {
-    /* Redirects to map page */
-    $("#login").on("click", function() {
-    	window.location.href = "map.html";
-    });
-
-    /* Shows create event div */
-    $(".add-event").on("click", function() {
-    	$(".create-event").slideToggle();
-    	$(".events-container").fadeOut();
-    });
-
-    /* Cancels create event */
-    $("#cancel").on("click", function() {
-    	$(".events-container").show();
-    	$(".create-event").slideToggle();
-    });
-
-    /* Cancels create event div */
-    $("#cancel-create").on("click", function() {
-    	$(".events-container").show();
-    	$(".create-event").slideToggle();
-    });
+    
+    /*====== LOCATION SELECTOR ======*/
 
     /* Shows the location selector div */
     $("#event-location").on("focus", function(){
@@ -83,6 +63,10 @@ $(document).ready(function() {
       $("#locationSelector").slideToggle();
       $("#event-location").val("‎-27.470430 153.016971");
     });
+
+
+
+    /*====== CREATE EVENT ======*/
 
     // Adds a new event to the text document
     // The text document is used to simulate event adding
@@ -161,6 +145,10 @@ $(document).ready(function() {
     	$(".create-event").slideToggle();
     });
 
+
+
+    /*====== GEOLOCATE FEATURE ======*/
+
     // Read ahead, second then adds it to the input
     function showPosition(position) {
         $("#event-location").val(position.coords.latitude + ' ' + position.coords.longitude);
@@ -175,6 +163,28 @@ $(document).ready(function() {
             x.innerHTML = "Geolocation is not supported by this browser.";
         }
 
+    });
+
+
+
+    /*====== SHOW/HIDE DIVS ======*/
+
+    /* Shows create event div */
+    $(".add-event").on("click", function() {
+        $(".create-event").slideToggle();
+        $(".events-container").fadeOut();
+    });
+
+    /* Cancels create event */
+    $("#cancel").on("click", function() {
+        $(".events-container").show();
+        $(".create-event").slideToggle();
+    });
+
+    /* Cancels create event div */
+    $("#cancel-create").on("click", function() {
+        $(".events-container").show();
+        $(".create-event").slideToggle();
     });
 
     /* Shows Oktoberfest chat */
@@ -244,6 +254,15 @@ $(document).ready(function() {
     	$(".edit-profile").slideToggle();
     });
 
+
+
+    /*====== REDIRECTING ======*/
+
+    /* Redirects to map page */
+    $("#login").on("click", function() {
+        window.location.href = "map.html";
+    });
+
     /* Redirects to Oktoberfest card */
     $("#oktoberfest").on("click", function() {
         window.location.href = "indiv-events/oktoberfest.html";
@@ -261,6 +280,10 @@ $(document).ready(function() {
         window.location.href = "indiv-events/chakradance.html";
     });
 
+
+
+    /*====== DISCOVER ICONS ======*/
+
     /* Adds select class to discover icons - for dev purposes only */
     $(".discover ul li div").on("click", function() {
         var clicked = $(this).is("#discover-active")
@@ -273,31 +296,5 @@ $(document).ready(function() {
             $(this).attr('id', 'discover-active');
         };
     });
-
-
-/* Add markers to the screen when attend event is selected */ //doesnt work at the moment 
-/*
-    var OIL = new google.maps.LatLng(-27.478104, 153.023184);
-    var OL = new google.maps.LatLng(-27.450817, 153.031959);
-    var CL = new google.maps.Latlng(-27.511776, 153.032770);
-    var EL = new google.maps.LatLng(-27.452093, 153.039228);
-
-    $("#attend-open-air").on("click", function(){
-      addMarker(OIL);
-    });
-
-    $("#attend-oktoberfest").on("click", function(){
-      addMarker(OL);
-    });
-
-    $("#attend-chakradance").on("click", function(){
-      addMarker(CL);
-    });
-
-    $("#attend-emporium").on("click", function(){
-      addMarker(EL);
-    });
-*/
-
 
 });
