@@ -275,7 +275,8 @@ $(document).ready(function() {
     });
 
 
-/* Add markers to the screen when attend event is selected */ //doesnt work at the moment
+/* Add markers to the screen when attend event is selected */ //doesnt work at the moment 
+/*
     var OIL = new google.maps.LatLng(-27.478104, 153.023184);
     var OL = new google.maps.LatLng(-27.450817, 153.031959);
     var CL = new google.maps.Latlng(-27.511776, 153.032770);
@@ -296,7 +297,7 @@ $(document).ready(function() {
     $("#attend-emporium").on("click", function(){
       addMarker(EL);
     });
-
+*/
 
 
 });
