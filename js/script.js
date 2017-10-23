@@ -274,4 +274,29 @@ $(document).ready(function() {
         };
     });
 
+
+/* Add markers to the screen when attend event is selected */ //doesnt work at the moment
+    var OIL = new google.maps.LatLng(-27.478104, 153.023184);
+    var OL = new google.maps.LatLng(-27.450817, 153.031959);
+    var CL = new google.maps.Latlng(-27.511776, 153.032770);
+    var EL = new google.maps.LatLng(-27.452093, 153.039228);
+
+    $("#attend-open-air").on("click", function(){
+      addMarker(OIL);
+    });
+
+    $("#attend-oktoberfest").on("click", function(){
+      addMarker(OL);
+    });
+
+    $("#attend-chakradance").on("click", function(){
+      addMarker(CL);
+    });
+
+    $("#attend-emporium").on("click", function(){
+      addMarker(EL);
+    });
+
+
+
 });
