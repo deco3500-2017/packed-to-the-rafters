@@ -248,8 +248,6 @@ function initMap() {
     mapMarkers.push(hotspot5);
   });
 
-
-
   // If you click on the pop attractions in Discover
   google.maps.event.addDomListener(document.getElementById('pop-attracts'), 'click', function () {
       map.panTo(new google.maps.LatLng(-27.489171, 153.028228));
@@ -278,9 +276,6 @@ function initMap() {
     mapMarkers.push(chakradance);
     mapMarkers.push(openAir);
   });
-
-
-
 
   // If you click on the events in Discover
   google.maps.event.addDomListener(document.getElementById('your-events'), 'click', function () {
@@ -317,36 +312,4 @@ function initMap() {
     };
   };
 
-}
-
-
-// - none of this is working. need to find out whyy
-/*
-  var image = "../map-pins/open-air-pin.png";
-  var marker = new google.maps.Marker({
-    position: {lat: -27.478104, lng: 153.023184},
-    map: map,
-    icon: image
-  });
-
-
-  var icon = {
-    url: "../map-pins/open-air-pin.png", // url
-    scaledSize: new google.maps.Size(50, 50), // scaled size
-    origin: new google.maps.Point(0,0), // origin
-    anchor: new google.maps.Point(0, 0) // anchor
 };
-
-var marker2 = new google.maps.Marker({
-    position: new google.maps.LatLng(-27.478104, 153.023184),
-    map: map,
-    icon: icon
-  }); 
-
-function addMarker(latlong){
-  var myMarker = new google.maps.Marker({
-    position: latlong,
-    map: map
-  });
-}
-*/
