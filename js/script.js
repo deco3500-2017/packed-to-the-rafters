@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+
     /*====== LOCATION SELECTOR ======*/
 
     /* Shows the location selector div */
@@ -167,7 +167,7 @@ $(document).ready(function() {
 
 
 
-    /*====== SHOW/HIDE DIVS ======*/
+    /*====== SHOW/HIDE CHATS & CREATE EVENT/EDIT PROFILE ======*/
 
     /* Shows create event div */
     $(".add-event").on("click", function() {
@@ -284,7 +284,7 @@ $(document).ready(function() {
 
     /*====== DISCOVER ICONS ======*/
 
-    /* Adds select class to discover icons - for dev purposes only */
+    /* Adds select class to discover icons */
     $(".discover ul li div").on("click", function() {
         var clicked = $(this).is("#discover-active")
 
