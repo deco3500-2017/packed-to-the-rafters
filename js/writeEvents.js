@@ -5,35 +5,33 @@ $(document).ready(function() {
         type : 'POST',
         dataType : 'json',
         success : function (result) {
-            if (result == null) {
-                console.log("No Events");
-                return;
-            }
             for (var i = 0; i < result.length; i++) {
-                var eventName = result[i][0];
-                var splitLocations = result[i][2];
-                var price = result[i][5];;
-                var desc = result[i][4];
-                var tagsInput = result[i][7];
-                if (tagsInput) {
-                var tagsArray = tagsInput.split('/[ ,]+/');
-                var tagsFinal = "";
-                if (price == "") {
-                    price = "free";
+                var peventName = result[i][0];
+                var pplitLocations = result[i][3];
+                var pprice = "$" + result[i][4];;
+                if (pprice == "$") {
+                    pprice = "free";
                 }
+                var pdesc = result[i][5];
+                var ptagsInput = result[i][6];
 
-                $(tagsArray).each(function (index) {
-                    var indivTag = tagsArray[index];
-                    var tagHtml = "<li>"+indivTag+"</li>"+"\n";
-                    tagsFinal += tagHtml;   
-                    console.log(tagsFinal);
+                if (ptagsInput != "") {
+                var ptagsArray = ptagsInput.split(',');
+                var ptagsFinal = "";
+               
+
+                $(ptagsArray).each(function (index) {
+                    var pindivTag = ptagsArray[index];
+                    var ptagHtml = "<li>"+pindivTag+"</li>"+"\n";
+                    ptagsFinal += ptagHtml;   
+                    console.log(ptagsFinal);
                 });
                 } else {
-                    tagsFinal = "<li>noTags</li>\n";
+                    ptagsFinal = "<li>noTags</li>\n";
                 }
-                var createdEvent = $('<div class="card"><div class="event-image"><img class="event-image-display" src="images/events/location-image.png"></div><div class="card-info"><h2 class="events-h2">'+eventName+'</h2><ul class="card-info-details"><li><p class="events-p">'+splitLocations+'</p><p class="events-p">'+price+'</p></li></ul><div id="card-info-tags"><ul id="events-tags" class="tags">'+tagsFinal+'</ul></div></div></div>');
-                $('.events-container').append(createdEvent);
-                createdEvent.attr('id', eventName);
+                var pcreatedEvent = $('<div class="card"><div class="event-image"><img class="event-image-display" src="images/events/location-image.png"></div><div class="card-info"><h2 class="events-h2">'+peventName+'</h2><ul class="card-info-details"><li><p class="events-p">'+pplitLocations+'</p><p class="events-p">'+pprice+'</p></li></ul><div id="card-info-tags"><ul id="events-tags" class="tags">'+ptagsFinal+'</ul></div></div></div>');
+                $('.events-container').append(pcreatedEvent);
+                pcreatedEvent.attr('id', peventName);
             }
             console.log("Events : " +result.length); // The value of your php $row['adverts'] will be displayed
         },
