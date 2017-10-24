@@ -210,10 +210,13 @@ function initMap() {
       lng: position.coords.longitude
     }
 
-    var yourMarker = 'https://i.imgur.com/TAa7l22.png';
+    var yourMarker = 'https://i.imgur.com/y5BW1fL.png';
     var yourPostition = new google.maps.Marker({
       position: {lat: -27.499512, lng: 153.014220},
-      map: map
+      map: map,
+      icon: yourMarker,
+      optimized: false,
+      zIndex: 9999
     });
   });
 
