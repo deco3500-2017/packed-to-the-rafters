@@ -268,17 +268,40 @@ $(document).ready(function() {
     $("#oktoberfest").on("click", function() {
         window.location.href = "indiv-events/oktoberfest.html";
     });
+
+    /* Redirects back to events page */
+    $("#not-inter-oktoberfest").on("click", function(){
+        window.location.href = "../events.html";
+    });
+
     /* Redirects to Open Air card */
     $("#open-air").on("click", function() {
         window.location.href = "indiv-events/open-air.html";
     });
+
+    /* Redirects back to events page */
+    $("#not-inter-open-air").on("click", function(){
+        window.location.href = "../events.html";
+    });
+
     /* Redirects to Emporium card */
     $("#emporium").on("click", function() {
         window.location.href = "indiv-events/emporium.html";
     });
+
+    /* Redirects back to events page */
+    $("#not-inter-emporium").on("click", function(){
+        window.location.href = "../events.html";
+    });
+
     /* Redirects to Chakradance card */
     $("#chakradance").on("click", function() {
         window.location.href = "indiv-events/chakradance.html";
+    });
+
+    /* Redirects back to events page */
+    $("#not-inter-chakradance").on("click", function(){
+        window.location.href = "../events.html";
     });
 
 

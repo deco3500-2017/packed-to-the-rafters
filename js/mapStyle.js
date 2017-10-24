@@ -257,7 +257,7 @@ function initMap() {
       map: map,
       icon: wifiImg
     });
-    
+
     var hotspot5 = new google.maps.Marker({
       position: {lat: -27.500485, lng: 153.014150},
       map: map,
@@ -275,8 +275,8 @@ function initMap() {
   /*====== POPULAR ATTRACTIONS ======*/
 
   google.maps.event.addDomListener(document.getElementById('pop-attracts'), 'click', function () {
-      map.panTo(new google.maps.LatLng(-27.499093, 153.016522));
-      map.setZoom(16);
+      map.panTo(new google.maps.LatLng(-27.4698, 153.0251));
+      map.setZoom(14);
   });
 
   $("#pop-attracts").on("click", function() {
@@ -284,14 +284,36 @@ function initMap() {
     // Clear Markers
     removeMarkers();
 
-    var uqLakesImg = 'https://i.imgur.com/8nr0DVt.png';
+    var attractionMarker = 'https://i.imgur.com/HhLNXSF.png';
+
     var uqLakes = new google.maps.Marker({
       position: {lat: -27.499093, lng: 153.016522},
       map: map,
-      icon: uqLakesImg
+      icon: attractionMarker
+    });
+
+    var queenStreet = new google.maps.Marker({
+      position: {lat: -27.469522, lng: 153.025214},
+      map: map,
+      icon: attractionMarker
+    });
+
+    var goma = new google.maps.Marker({
+      position: {lat: -27.470430, lng: 153.016971},
+      map: map,
+      icon: attractionMarker
+    });
+
+    var wheel = new google.maps.Marker({
+      position: {lat: -27.475094, lng: 153.020859},
+      map: map,
+      icon: attractionMarker
     });
 
     mapMarkers.push(uqLakes);
+    mapMarkers.push(queenstreet);
+    mapMarkers.push(goma);
+    mapMarkers.push(wheel);
   });
 
 
@@ -312,7 +334,7 @@ function initMap() {
       position: {lat: -27.451003, lng: 153.031977},
       map: map,
       icon: oktImg
-    }); 
+    });
 
     var empImg = 'https://i.imgur.com/Hln9nrj.png';
     var emporium = new google.maps.Marker({
@@ -331,19 +353,19 @@ function initMap() {
     };
   };
 
-  
+
   /*====== SEARCH BOX ======*/
-  // Author: Yeldar Kurmangaliyev 
-  // REF: http://jsfiddle.net/mwdav69t/1/ 
+  // Author: Yeldar Kurmangaliyev
+  // REF: http://jsfiddle.net/mwdav69t/1/
 
   // Locations
   var locations = [ "UQ St Lucia", "South Bank, South Brisbane", "Northshore Harbour, Hamilton", "Fortitude Valley"];
   // Respective Lat and Lng of Locations
   var mapLat = [ -27.499915, -27.473559, -27.444794, -27.457218 ];
   var mapLng = [ 153.015202, 153.018790, 153.084351, 153.034969 ];
-    
+
   /* Keyword autocomplete of search box */
-  $("#keyword").autocomplete({ 
+  $("#keyword").autocomplete({
       source: locations,
       minLength: 0,
       select: function (event, ui) {
@@ -354,11 +376,11 @@ function initMap() {
 
           removeMarkers();
           // Sets value of search box
-          $("#keyword").val(locations[index]);  
+          $("#keyword").val(locations[index]);
           // Pans map to selected location
           map.panTo(new google.maps.LatLng(setMapLat, setMapLng));
           map.setZoom(15);
-          
+
           // Popular attractions marker
           var attractionPin = 'https://i.imgur.com/Hln9nrj.png';
 
@@ -424,7 +446,7 @@ function initMap() {
 
             mapMarkers.push(chinaTown);
           }
-          
+
       }
   }).focus(function () {
     $(this).autocomplete("search");
