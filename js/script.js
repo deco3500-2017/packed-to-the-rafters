@@ -72,22 +72,22 @@ $(document).ready(function() {
     // The text document is used to simulate event adding
     /// IMPORTANT ADD Jquery code and see if you can work
     //  around ajax's stupid protocols for local storage
-    function writeToFile(_name, _date, _time, _lat, _long, _price, _desc, _tags){
+    //function writeToFile(_name, _date, _time, _lat, _long, _price, _desc, _tags){
         //alert(_name);
         /*var fso = new ActiveXObject("Scripting.FileSystemObject");
         var myFile = fso.OpenTextFile("data/data.txt", 8, false, 0);
         myFile.WriteLine(_name + ':' + _date + ':' + _time + ':'
             + _lat + ':' + _long + ':' + _price + ':' + _desc + _tags);
         myFile.Close();*/
-        $.ajax({
+       /* $.ajax({
             url: './php/writeText.php',
             type: 'GET',
             data: { "callFunc1": "1"},
             success: function(response) { alert(response); }
         });
     }
-
-    /* Creates event */
+    */
+    /* Creates event 
     $("#save-create").on("click", function() {
     	// Validate inputs - to be done
         // First Check if inputs aren't empty an valid
@@ -113,8 +113,8 @@ $(document).ready(function() {
             alert("Event time cannot be empty");
             return;
         }
-        /* Don't check if time is in the past. due to all events
-        that are within todays date are being plotted */
+        //Don't check if time is in the past. due to all events
+        //that are within todays date are being plotted 
         var eventTime = $("#event-time").val();
 
         // Check Location
@@ -145,7 +145,7 @@ $(document).ready(function() {
     	$(".create-event").slideToggle();
     });
 
-
+*/
 
     /*====== GEOLOCATE FEATURE ======*/
 
@@ -170,24 +170,7 @@ $(document).ready(function() {
 
     /*====== SHOW/HIDE CHATS & CREATE EVENT/EDIT PROFILE ======*/
 
-    /* Shows create event div */
-    $(".add-event").on("click", function() {
-        $(".create-event").slideToggle();
-        $(".events-container").fadeOut();
-    });
-
-    /* Cancels create event */
-    $("#cancel").on("click", function() {
-        $(".events-container").show();
-        $(".create-event").slideToggle();
-    });
-
-    /* Cancels create event div */
-    $("#cancel-create").on("click", function() {
-        $(".events-container").show();
-        $(".create-event").slideToggle();
-    });
-
+   
     /* Shows Oktoberfest chat */
     $("#okt-icon").on("click", function() {
         $("#oktoberfest-chat").slideToggle();
