@@ -86,5 +86,19 @@ $(document).ready(function() {
     	$(".events-container").show();
 		document.getElementById(eventName).scrollIntoView();
     	$(".create-event").slideToggle();
+        
+        //Send to php
+        $.ajax({
+            url: './php/writeText.php',
+            type: 'POST',
+            data: { eName: $("input[type='text'][name='ename']").val(), 
+                eTime: $("input[type='time'][name='time']").val(),
+                eDate: $("input[type='date'][name='date']").val(),
+                eLocation: $("textarea[type='textarea'][name='location']").val(),
+                ePrice: $("input[type='text'][name='price']").val(),
+                eDesc: $("input[type='text'][name='desc']").val(),
+                eTags: $("input[type='text'][name='etags']").val()},
+            success: function(response) { alert(response); }
+        });
     });
 });

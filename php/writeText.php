@@ -1,13 +1,15 @@
 <?php
-echo $_GET['ename']; 	// event name
-echo $_GET['time']; 	// event time
-echo $_GET['date']; 	// event date
-echo $_GET['location']; // event location
-echo $_GET['desc']; 	// event Description
-echo $_GET['etags']; 	// event tags
 // Assume it works until testing on the server
 $myfile = fopen("data.txt", "a") or die("Unable to open file!");
-$txt = $_GET['ename'] + ":" + $_GET['time'] + ":" + $_GET['date'] + ":" + $_GET['location'] + ":" + $_GET['desc'] + ":" + $_GET['etags'] + "\n";
-fwrite($myfile, "\n". $txt);
+$eName = $_POST['eName'];
+$eTime = $_POST['eTime'];
+$eDate = $_POST['eDate'];
+$eLocation = $_POST['eLocation'];
+$eDesc = $_POST['eDesc'];
+$eTags = $_POST['eTags'];
+$txt = $eName . '/' . $eTime . '/' . $eDate . '/' . $eLocation . '/' . $eDesc . '/' . $eTags. "\n";
+//$myphpvariable= $_POST['param1'];
+echo $eTime;
+fwrite($myfile, $txt);
 fclose($myfile);
 ?>
