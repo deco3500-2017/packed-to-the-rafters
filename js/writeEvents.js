@@ -69,7 +69,7 @@ $(document).ready(function() {
         var price = $("#event-price").val();
         var desc = $("#event-desc").val();
         var tagsInput = $("#create-event-tags").val();
-        var tagsArray = tagsInput.split(/[ ,]+/);
+        var tagsArray = tagsInput.split('/[ ,]+/');
         var tagsFinal = "";
 
 		$(tagsArray).each(function (index) {
