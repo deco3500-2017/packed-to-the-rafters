@@ -1,3 +1,6 @@
+
+/*====== INITIALISING MAP ======*/
+
 function initMap() {
   var brisbane = {lat: -27.4698, lng: 153.0251};
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -196,10 +199,27 @@ function initMap() {
 });
 
 
+  /*====== DISCOVER ICONS ======*/
   // Marker Array
   var mapMarkers = [];
 
-  // If you click wifi hotspots in Discover
+  /* Gets location of user and forever shows it on the map */
+  navigator.geolocation.getCurrentPosition(function(position) {
+    var pos = {
+      lat: position.coords.latitude,
+      lng: position.coords.longitude
+    }
+
+    var yourMarker = 'https://i.imgur.com/TAa7l22.png';
+    var yourPostition = new google.maps.Marker({
+      position: {lat: -27.499512, lng: 153.014220},
+      map: map
+    });
+  });
+
+
+  /*====== WIFI HOTSPOTS ======*/
+
   google.maps.event.addDomListener(document.getElementById('wifi-hotspots'), 'click', function () {
       map.panTo(new google.maps.LatLng(-27.499516, 153.014538));
       map.setZoom(18);
@@ -248,10 +268,12 @@ function initMap() {
     mapMarkers.push(hotspot5);
   });
 
-  // If you click on the pop attractions in Discover
+
+  /*====== POPULAR ATTRACTIONS ======*/
+
   google.maps.event.addDomListener(document.getElementById('pop-attracts'), 'click', function () {
-      map.panTo(new google.maps.LatLng(-27.489171, 153.028228));
-      map.setZoom(13);
+      map.panTo(new google.maps.LatLng(-27.499093, 153.016522));
+      map.setZoom(16);
   });
 
   $("#pop-attracts").on("click", function() {
@@ -259,25 +281,19 @@ function initMap() {
     // Clear Markers
     removeMarkers();
 
-    var danceImg = 'https://i.imgur.com/8nr0DVt.png';
-    var chakradance = new google.maps.Marker({
-      position: {lat: -27.510199, lng: 153.032964},
+    var uqLakesImg = 'https://i.imgur.com/8nr0DVt.png';
+    var uqLakes = new google.maps.Marker({
+      position: {lat: -27.499093, lng: 153.016522},
       map: map,
-      icon: danceImg
-    }); 
-
-    var openImg = 'https://i.imgur.com/1jee9H9.png';
-    var openAir = new google.maps.Marker({
-      position: {lat: -27.478389, lng: 153.023217},
-      map: map,
-      icon: openImg
+      icon: uqLakesImg
     });
 
-    mapMarkers.push(chakradance);
-    mapMarkers.push(openAir);
+    mapMarkers.push(uqLakes);
   });
 
-  // If you click on the events in Discover
+
+  /*====== EVENTS YOU'RE ATTENDING/YOU'VE CREATED ======*/
+
   google.maps.event.addDomListener(document.getElementById('your-events'), 'click', function () {
       map.panTo(new google.maps.LatLng(-27.451850, 153.035789));
       map.setZoom(15);
@@ -312,4 +328,102 @@ function initMap() {
     };
   };
 
+  
+  /*====== SEARCH BOX ======*/
+  // Author: Yeldar Kurmangaliyev 
+  // REF: http://jsfiddle.net/mwdav69t/1/ 
+
+  // Locations
+  var locations = [ "UQ St Lucia", "South Bank, South Brisbane", "Northshore Harbour, Hamilton", "Fortitude Valley"];
+  // Respective Lat and Lng of Locations
+  var mapLat = [ -27.499915, -27.473559, -27.444794, -27.457218 ];
+  var mapLng = [ 153.015202, 153.018790, 153.084351, 153.034969 ];
+    
+  /* Keyword autocomplete of search box */
+  $("#keyword").autocomplete({ 
+      source: locations,
+      minLength: 0,
+      select: function (event, ui) {
+          var index = locations.indexOf(ui.item.value);
+          console.log(index);
+          var setMapLat = mapLat[index];
+          var setMapLng = mapLng[index];
+
+          removeMarkers();
+          // Sets value of search box
+          $("#keyword").val(locations[index]);  
+          // Pans map to selected location
+          map.panTo(new google.maps.LatLng(setMapLat, setMapLng));
+          map.setZoom(15);
+          
+          // Popular attractions marker
+          var attractionPin = 'https://i.imgur.com/Hln9nrj.png';
+
+          // If UQ chosen
+          if (index == 0) {
+            // Clear markers
+            removeMarkers();
+
+            var uqLakes = new google.maps.Marker({
+              position: {lat: -27.499093, lng: 153.016522},
+              map: map,
+              icon: attractionPin
+            });
+
+            mapMarkers.push(uqLakes);
+          }
+
+          // If South Bank chosen
+          if (index == 1) {
+            // Clear markers
+            removeMarkers();
+
+            var wheelOfBris = new google.maps.Marker({
+              position: {lat: -27.475327, lng: 153.020921},
+              map: map,
+              icon: attractionPin
+            });
+
+            var goma = new google.maps.Marker({
+              position: {lat: -27.470639, lng: 153.017057},
+              map: map,
+              icon: attractionPin
+            });
+
+            mapMarkers.push(wheelOfBris);
+            mapMarkers.push(goma);
+          }
+
+          // If Northshore chosen
+          if (index == 2) {
+            // Clear markers
+            removeMarkers();
+
+            var eatStreet = new google.maps.Marker({
+              position: {lat: -27.443737, lng: 153.079849},
+              map: map,
+              icon: attractionPin
+            });
+
+            mapMarkers.push(eatStreet);
+          }
+
+          // If Fortitude valley chosen
+          if (index == 3) {
+            // Clear markers
+            removeMarkers();
+
+            var chinaTown = new google.maps.Marker({
+              position: {lat: -27.457956, lng: 153.033075},
+              map: map,
+              icon: attractionPin
+            });
+
+            mapMarkers.push(chinaTown);
+          }
+          
+      }
+  }).focus(function () {
+    $(this).autocomplete("search");
+  });
 };

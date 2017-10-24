@@ -152,6 +152,7 @@ $(document).ready(function() {
     // Read ahead, second then adds it to the input
     function showPosition(position) {
         $("#event-location").val(position.coords.latitude + ' ' + position.coords.longitude);
+        console.log("yup");
     }
 
     //Autofills towards their geolocation, first Checks it

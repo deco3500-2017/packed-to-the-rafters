@@ -90,6 +90,10 @@ ul.nav-bar {
 	box-shadow: -2px 12px 10px -9px rgba(0,0,0,0.75);
 }
 
+#ui-id-1 {
+	z-index: 999999;
+}
+
 .text-input {
 	width: 90%;
 	border-radius: 2px;
