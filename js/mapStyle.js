@@ -311,7 +311,7 @@ function initMap() {
     });
 
     mapMarkers.push(uqLakes);
-    mapMarkers.push(queenstreet);
+    mapMarkers.push(queenStreet);
     mapMarkers.push(goma);
     mapMarkers.push(wheel);
   });
