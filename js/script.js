@@ -247,6 +247,12 @@ $(document).ready(function() {
         window.location.href = "map.html";
     });
 
+    /* Redirect a custom event */
+     $("#customEvent").on("click", function() {
+        window.location.href = "indiv-events/oktoberfest.html";
+        alert("holy smokes");
+    });
+
     /* Redirects to Oktoberfest card */
     $("#oktoberfest").on("click", function() {
         window.location.href = "indiv-events/oktoberfest.html";

@@ -29,9 +29,15 @@ $(document).ready(function() {
                 } else {
                     ptagsFinal = "<li>noTags</li>\n";
                 }
-                var pcreatedEvent = $('<div class="card"><div class="event-image"><img class="event-image-display" src="images/events/location-image.png"></div><div class="card-info"><h2 class="events-h2">'+peventName+'</h2><ul class="card-info-details"><li><p class="events-p">'+pplitLocations+'</p><p class="events-p">'+pprice+'</p></li></ul><div id="card-info-tags"><ul id="events-tags" class="tags">'+ptagsFinal+'</ul></div></div></div>');
+                var pcreatedEvent = $('<div><div class="event-image"><img class="event-image-display" src="images/events/location-image.png"></div><div class="card-info"><h2 class="events-h2">'+peventName+'</h2><ul class="card-info-details"><li><p class="events-p">'+pplitLocations+'</p><p class="events-p">'+pprice+'</p></li></ul><div id="card-info-tags"><ul id="events-tags" class="tags">'+ptagsFinal+'</ul></div></div></div>');
                 $('.events-container').append(pcreatedEvent);
-                pcreatedEvent.attr('id', peventName);
+                pcreatedEvent.attr('id', "customEvent");
+                pcreatedEvent.attr('class',"card");
+                pcreatedEvent.attr('value',i);
+                pcreatedEvent.on("click", function() {
+                    window.location.href = "customEvent.php?number=" + this.getAttribute("value");
+                });
+                //pcreatedEvent.attr('value', i);
             }
             console.log("Events : " +result.length); // The value of your php $row['adverts'] will be displayed
         },
@@ -117,7 +123,9 @@ $(document).ready(function() {
     	var createdEvent = $('<div class="card"><div class="event-image"><img class="event-image-display" src="images/events/location-image.png"></div><div class="card-info"><h2 class="events-h2">'+eventName+'</h2><ul class="card-info-details"><li><p class="events-p">'+splitLocations+'</p><p class="events-p">'+price+'</p></li></ul><div id="card-info-tags"><ul id="events-tags" class="tags">'+tagsFinal+'</ul></div></div></div>');
 		$('.events-container').append(createdEvent);
 		createdEvent.attr('id', eventName);
-
+        createdEvent.on("click", function() {
+            window.location.href = "customEvent.php?number=" + this.getAttribute("value");
+        });
     	$(".events-container").show();
 		document.getElementById(eventName).scrollIntoView();
     	$(".create-event").slideToggle();
@@ -129,9 +137,9 @@ $(document).ready(function() {
             data: { eName: $("input[type='text'][name='ename']").val(), 
                 eTime: $("input[type='time'][name='time']").val(),
                 eDate: $("input[type='date'][name='date']").val(),
-                eLocation: $("textarea[type='textarea'][name='location']").val(),
+                eLocation: $("input[type='text'][name='location']").val(),
                 ePrice: $("input[type='text'][name='price']").val(),
-                eDesc: $("input[type='text'][name='desc']").val(),
+                eDesc: $("textarea[type='textarea'][name='desc']").val(),
                 eTags: $("input[type='text'][name='etags']").val()},
             success: function(response) {}
         });
