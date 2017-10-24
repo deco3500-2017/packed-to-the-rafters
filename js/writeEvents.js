@@ -5,6 +5,9 @@ $(document).ready(function() {
     });
     alert("loading file");
 	*/
+
+    var eventName;
+
 	 /* Shows create event div */
     $(".add-event").on("click", function() {
         $(".create-event").slideToggle();
@@ -44,7 +47,7 @@ $(document).ready(function() {
             return;
         }
         //Don't check if time is in the past. due to all events
-        //that are within todays date are being plotted 
+        //that are within todays date are being plotted
         var eventTime = $("#event-time").val();
 
         // Check Location
@@ -75,7 +78,7 @@ $(document).ready(function() {
 		$(tagsArray).each(function (index) {
 			var indivTag = tagsArray[index];
 			var tagHtml = "<li>"+indivTag+"</li>"+"\n";
-			tagsFinal += tagHtml;	
+			tagsFinal += tagHtml;
 			console.log(tagsFinal);
 		});
 
@@ -86,5 +89,16 @@ $(document).ready(function() {
     	$(".events-container").show();
 		document.getElementById(eventName).scrollIntoView();
     	$(".create-event").slideToggle();
+
+      $("#"+eventName).on("click", function(){
+        $("#editEventPage").show();
+        window.scrollTo(0,0);
+      });
+
+      $("#edit-back-btn").on("click", function(){
+        $("#editEventPage").hide();
+      });
+
     });
+
 });
