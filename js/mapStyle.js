@@ -286,11 +286,44 @@ function initMap() {
 
     var attractionMarker = 'https://i.imgur.com/HhLNXSF.png';
 
-    var uqLakes = new google.maps.Marker({
+    var contentUQ = '<div id="content">'+
+     '<div id="siteNotice">'+
+     '</div>'+
+     '<h1 id="firstHeading" class="firstHeading">UQ Lakes</h1>'+
+     '<div id="bodyContent">'+
+     '<p><b>Rating: 5/5</b><br></p>'+
+     '<p>University of Queenslands beautiful man made lakes.'+
+     '<br>Filled with beautiful wildlife such as ducks, turles, fish and pelicans'+
+     '</div>'+
+     '</div>';
+
+     var infowindowUQ = new google.maps.InfoWindow({
+       content: contentUQ
+     });
+
+    var uqlakes = new google.maps.Marker({
       position: {lat: -27.499093, lng: 153.016522},
       map: map,
       icon: attractionMarker
     });
+
+    uqlakes.addListener('click', function() {
+      infowindowUQ.open(map, uqlakes);
+    });
+
+    var contentQueenStreet = '<div id="content">'+
+     '<div id="siteNotice">'+
+     '</div>'+
+     '<h1 id="firstHeading" class="firstHeading">Queen Street Mall</h1>'+
+     '<div id="bodyContent">'+
+     '<p><b>Rating: 4/5</b><br></p>'+
+     '<p>The heart of Brisbane City, Queen Street Mall is filled with great shopping and restraunts.'+
+     '</div>'+
+     '</div>';
+
+     var infowindowQS = new google.maps.InfoWindow({
+       content: contentQueenStreet
+     });
 
     var queenStreet = new google.maps.Marker({
       position: {lat: -27.469522, lng: 153.025214},
@@ -298,11 +331,47 @@ function initMap() {
       icon: attractionMarker
     });
 
+    queenStreet.addListener('click', function() {
+      infowindowQS.open(map, queenStreet);
+    });
+
+    var contentGoma = '<div id="content">'+
+     '<div id="siteNotice">'+
+     '</div>'+
+     '<h1 id="firstHeading" class="firstHeading">The Gallery of Modern Art</h1>'+
+     '<div id="bodyContent">'+
+     '<p><b>Rating: 5/5</b><br></p>'+
+     '<p>Also known as GOMA, this art museum always has amazing exhibits to explore. Great photo opportunities as well.</p>'+
+     '</div>'+
+     '</div>';
+
+     var infowindowGoma = new google.maps.InfoWindow({
+       content: contentGoma
+     });
+
     var goma = new google.maps.Marker({
       position: {lat: -27.470430, lng: 153.016971},
       map: map,
       icon: attractionMarker
     });
+
+    goma.addListener('click', function() {
+      infowindowGoma.open(map, goma);
+    });
+
+    var contentWheel = '<div id="content">'+
+     '<div id="siteNotice">'+
+     '</div>'+
+     '<h1 id="firstHeading" class="firstHeading">The Wheel of Brisbane</h1>'+
+     '<div id="bodyContent">'+
+     '<p><b>Rating: 4/5</b><br></p>'+
+     '<p>Placed in SouthBank Parklands, the Brisbane Eye, is a huge ferriswheel showing off Brisbane city from an amazing height</p>'+
+     '</div>'+
+     '</div>';
+
+     var infowindowWheel = new google.maps.InfoWindow({
+       content: contentWheel
+     });
 
     var wheel = new google.maps.Marker({
       position: {lat: -27.475094, lng: 153.020859},
@@ -310,10 +379,16 @@ function initMap() {
       icon: attractionMarker
     });
 
-    mapMarkers.push(uqLakes);
+    wheel.addListener('click', function() {
+      infowindowWheel.open(map, wheel);
+    });
+
+    mapMarkers.push(uqlakes);
     mapMarkers.push(queenStreet);
     mapMarkers.push(goma);
     mapMarkers.push(wheel);
+    console.log("pushed");
+
   });
 
 
