@@ -1,12 +1,46 @@
 $(document).ready(function() {
-	/*
-	$.get('./php/readTextEvent.php', function(data) {
-       // do nothing
-    });
-    alert("loading file");
-	*/
+    // READ FROM THE FILE AND ADD DIVS
+    $.ajax({
+        url : './php/readTextEvent.php',
+        type : 'POST',
+        dataType : 'json',
+        success : function (result) {
+            if (result == null) {
+                console.log("No Events");
+                return;
+            }
+            for (var i = 0; i < result.length; i++) {
+                var eventName = result[i][0];
+                var splitLocations = result[i][2];
+                var price = result[i][5];;
+                var desc = result[i][4];
+                var tagsInput = result[i][7];
+                if (tagsInput) {
+                var tagsArray = tagsInput.split('/[ ,]+/');
+                var tagsFinal = "";
+                if (price == "") {
+                    price = "free";
+                }
 
-    var eventName;
+                $(tagsArray).each(function (index) {
+                    var indivTag = tagsArray[index];
+                    var tagHtml = "<li>"+indivTag+"</li>"+"\n";
+                    tagsFinal += tagHtml;   
+                    console.log(tagsFinal);
+                });
+                } else {
+                    tagsFinal = "<li>noTags</li>\n";
+                }
+                var createdEvent = $('<div class="card"><div class="event-image"><img class="event-image-display" src="images/events/location-image.png"></div><div class="card-info"><h2 class="events-h2">'+eventName+'</h2><ul class="card-info-details"><li><p class="events-p">'+splitLocations+'</p><p class="events-p">'+price+'</p></li></ul><div id="card-info-tags"><ul id="events-tags" class="tags">'+tagsFinal+'</ul></div></div></div>');
+                $('.events-container').append(createdEvent);
+                createdEvent.attr('id', eventName);
+            }
+            console.log("Events : " +result.length); // The value of your php $row['adverts'] will be displayed
+        },
+        error : function () {
+           alert("error reading from file or something");
+        }
+    })
 
 	 /* Shows create event div */
     $(".add-event").on("click", function() {
@@ -47,7 +81,7 @@ $(document).ready(function() {
             return;
         }
         //Don't check if time is in the past. due to all events
-        //that are within todays date are being plotted
+        //that are within todays date are being plotted 
         var eventTime = $("#event-time").val();
 
         // Check Location
@@ -78,7 +112,7 @@ $(document).ready(function() {
 		$(tagsArray).each(function (index) {
 			var indivTag = tagsArray[index];
 			var tagHtml = "<li>"+indivTag+"</li>"+"\n";
-			tagsFinal += tagHtml;
+			tagsFinal += tagHtml;	
 			console.log(tagsFinal);
 		});
 
@@ -89,7 +123,6 @@ $(document).ready(function() {
     	$(".events-container").show();
 		document.getElementById(eventName).scrollIntoView();
     	$(".create-event").slideToggle();
-<<<<<<< HEAD
         
         //Send to php
         $.ajax({
@@ -102,19 +135,7 @@ $(document).ready(function() {
                 ePrice: $("input[type='text'][name='price']").val(),
                 eDesc: $("input[type='text'][name='desc']").val(),
                 eTags: $("input[type='text'][name='etags']").val()},
-            success: function(response) { alert(response); }
+            success: function(response) {}
         });
-=======
-
-      $("#"+eventName).on("click", function(){
-        $("#editEventPage").show();
-        window.scrollTo(0,0);
-      });
-
-      $("#edit-back-btn").on("click", function(){
-        $("#editEventPage").hide();
-      });
-
     });
-
 });
