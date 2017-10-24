@@ -382,7 +382,7 @@ function initMap() {
           map.setZoom(15);
 
           // Popular attractions marker
-          var attractionPin = 'https://i.imgur.com/Hln9nrj.png';
+          var attractionPin = 'https://i.imgur.com/HhLNXSF.png';
 
           // If UQ chosen
           if (index == 0) {
