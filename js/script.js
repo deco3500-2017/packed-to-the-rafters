@@ -1,5 +1,22 @@
 $(document).ready(function() {
 
+    $("#attend-chakradance").on("click", function() {
+        $("#not-inter-chakradance").fadeOut();
+    });
+        
+    
+    $("#attend-emporium").on("click", function() {
+        $("#not-inter-emporium").fadeOut();
+    });
+
+    $("#attend-oktoberfest").on("click", function() {
+        $("#not-inter-oktoberfest").fadeOut();
+    });
+
+    $("#attend-open-air").on("click", function() {
+        $("#not-inter-open-air").fadeOut();
+    });
+
     /*====== LOCATION SELECTOR ======*/
 
     /* Shows the location selector div */
