@@ -5,21 +5,23 @@ This is the Github repository housing the project assets for _Travel Pack_. Thes
 ## Introduction
 Travel Pack is a social mobile and computing app that aims to bring together travellers from around the globe. Travel Pack provides users with a platform that allows them to discover various local events, wifi hotspots and other individuals touring the area. 
 
+A link to the prototype can be found here: travelpack.uqcloud.net
+
 ## Concept
 Travel pack aims to connect travellers with others who are doing the same as them. To do this, the concept is an application that not only tells travellers of the different events around the area but creates events for users and automatically invites people of similar interests together. The concept allows travellers to meet like-minded people while travelling, increasing the chance of creating quality travel buddies who would be interested in doing the same things. 
 
 ### How Does TravelPack Achieve This?
-The app requires users to create a profile for themselves in which they specify their age and interests. The app then filters through all travellers in the area and creates events based on the common interests. It then automatically sends invites to the users and creates an event chat so the users can do further planning if necessary. The app takes all the hard work out of organising tourist events and meeting friends while travelling. 
+The app requires users to create a profile for themselves in which they specify their age and interests. The app then filters through all travellers in the area and creates events based on the common interests. Travel Pack then displays all these events on an 'Events' page in the application. The application uses an algorithm so that that events most relevant to users regarding interest and place appear at the top of the list of events. Users can also search for events using tags or location. Each event creates an event chat so the users can do further planning with others attending the event. The app takes all the hard work out of organising tourist events and meeting friends while travelling. 
 Travel Pack additionally marks venues, restaurants and locations on the map with a built in star rating system for users to leave feedback. 
 
 ### What Makes this Unique from Existing Solutions?
-Travel Pack differs from existing travel applications as it creates events for the users and personalities these events to user interests. Other applications exist that work towards the same goal of bringing people together during travelling and creating a travel community. An app that does this is called ‘Backpackr’ (backpacker.org). These other apps although require the users to organise their own meetups and manually look through the other users interests. 
+Travel Pack differs from existing travel applications as it creates events for the users and personalises these events to user interests. Other applications exist that work towards the same goal of bringing people together during travelling and creating a travel community. An app that does this is called ‘Backpackr’ (backpacker.org). These other apps although require the users to organise their own meetups and manually look through the other users interests to find likeminded people. 
 
 ### Target Audience
-Travel Pack aims to reach out to travellers of all kinds. Domestic and international; women and men; adventurous and conservative; the features of this application cater to many demographics and allow travellers from all different backgrounds to come together.
+Travel Pack aims to reach out to travellers of all kinds. Domestic and international; women and men; adventurous and conservative; the features of this application cater to many demographics and allow travellers from all different backgrounds to come together. Travel Pack can be used by solo, pair or even groups of travellers wanting to find other travellers to explore and socialise with. 
 
 ### Personas
-In order to gain a better insight as to what features should be included within the platform, personas of potential Travel App users have been created. Examples are shown below:
+In order to gain a better insight as to what features would be included within the platform, personas of potential Travel App users were created. Examples are shown below:
 
 #### Hilari Makae
 
