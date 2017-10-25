@@ -464,10 +464,29 @@ function initMap() {
             // Clear markers
             removeMarkers();
 
-            var uqLakes = new google.maps.Marker({
+            var contentUQ = '<div id="content">'+
+             '<div id="siteNotice">'+
+             '</div>'+
+             '<h1 id="firstHeading" class="firstHeading">UQ Lakes</h1>'+
+             '<div id="bodyContent">'+
+             '<p><b>Rating: 5/5</b><br></p>'+
+             '<p>University of Queenslands beautiful man made lakes.'+
+             '<br>Filled with beautiful wildlife such as ducks, turles, fish and pelicans'+
+             '</div>'+
+             '</div>';
+
+             var infowindowUQ = new google.maps.InfoWindow({
+               content: contentUQ
+             });
+
+            var uqlakes = new google.maps.Marker({
               position: {lat: -27.499093, lng: 153.016522},
               map: map,
               icon: attractionPin
+            });
+
+            uqlakes.addListener('click', function() {
+              infowindowUQ.open(map, uqlakes);
             });
 
             mapMarkers.push(uqLakes);
@@ -478,19 +497,55 @@ function initMap() {
             // Clear markers
             removeMarkers();
 
-            var wheelOfBris = new google.maps.Marker({
-              position: {lat: -27.475327, lng: 153.020921},
+            var contentWheel = '<div id="content">'+
+             '<div id="siteNotice">'+
+             '</div>'+
+             '<h1 id="firstHeading" class="firstHeading">The Wheel of Brisbane</h1>'+
+             '<div id="bodyContent">'+
+             '<p><b>Rating: 4/5</b><br></p>'+
+             '<p>Placed in SouthBank Parklands, the Brisbane Eye, is a huge ferriswheel showing off Brisbane city from an amazing height</p>'+
+             '</div>'+
+             '</div>';
+
+             var infowindowWheel = new google.maps.InfoWindow({
+               content: contentWheel
+             });
+
+            var wheel = new google.maps.Marker({
+              position: {lat: -27.475094, lng: 153.020859},
               map: map,
               icon: attractionPin
             });
+
+            wheel.addListener('click', function() {
+              infowindowWheel.open(map, wheel);
+            });
+
+            var contentGoma = '<div id="content">'+
+             '<div id="siteNotice">'+
+             '</div>'+
+             '<h1 id="firstHeading" class="firstHeading">The Gallery of Modern Art</h1>'+
+             '<div id="bodyContent">'+
+             '<p><b>Rating: 5/5</b><br></p>'+
+             '<p>Also known as GOMA, this art museum always has amazing exhibits to explore. Great photo opportunities as well.</p>'+
+             '</div>'+
+             '</div>';
+
+             var infowindowGoma = new google.maps.InfoWindow({
+               content: contentGoma
+             });
 
             var goma = new google.maps.Marker({
-              position: {lat: -27.470639, lng: 153.017057},
+              position: {lat: -27.470430, lng: 153.016971},
               map: map,
               icon: attractionPin
             });
 
-            mapMarkers.push(wheelOfBris);
+            goma.addListener('click', function() {
+              infowindowGoma.open(map, goma);
+            });
+
+            mapMarkers.push(wheel);
             mapMarkers.push(goma);
           }
 
@@ -499,10 +554,29 @@ function initMap() {
             // Clear markers
             removeMarkers();
 
+
+            var contentEat = '<div id="content">'+
+             '<div id="siteNotice">'+
+             '</div>'+
+             '<h1 id="firstHeading" class="firstHeading"> Eat Street</h1>'+
+             '<div id="bodyContent">'+
+             '<p><b>Rating: 5/5</b><br></p>'+
+             '<p>Amazing atmosphere with food, markets and various live music. Great place to bring the family or go for date night</p>'+
+             '</div>'+
+             '</div>';
+
+             var infowindowEat = new google.maps.InfoWindow({
+               content: contentEat
+             });
+
             var eatStreet = new google.maps.Marker({
               position: {lat: -27.443737, lng: 153.079849},
               map: map,
               icon: attractionPin
+            });
+
+            eatStreet.addListener('click', function() {
+              infowindowEat.open(map, eatStreet);
             });
 
             mapMarkers.push(eatStreet);
@@ -513,10 +587,29 @@ function initMap() {
             // Clear markers
             removeMarkers();
 
+
+            var contentChina = '<div id="content">'+
+             '<div id="siteNotice">'+
+             '</div>'+
+             '<h1 id="firstHeading" class="firstHeading"> China Town</h1>'+
+             '<div id="bodyContent">'+
+             '<p><b>Rating: 4/5</b><br></p>'+
+             '<p>Great Asian culture and food. Nice little city inside Brisbanes own</p>'+
+             '</div>'+
+             '</div>';
+
+             var infowindowChina = new google.maps.InfoWindow({
+               content: contentChina
+             });
+
             var chinaTown = new google.maps.Marker({
               position: {lat: -27.457956, lng: 153.033075},
               map: map,
               icon: attractionPin
+            });
+
+            chinaTown.addListener('click', function() {
+              infowindowChina.open(map, chinaTown);
             });
 
             mapMarkers.push(chinaTown);
