@@ -6,6 +6,7 @@ This is the Github repository housing the project assets for _Travel Pack_. Thes
 Travel Pack is a social mobile and computing app that aims to bring together travellers from around the globe. Travel Pack provides users with a platform that allows them to discover various local events, wifi hotspots and other individuals touring the area. 
 
 A link to the prototype can be found here: travelpack.uqcloud.net
+A video explaining Travel Pack can be found here: https://www.youtube.com/watch?v=ymtS1vYpPSI&feature=youtu.be
 
 ## Concept
 Travel pack aims to connect travellers with others who are doing the same as them. To do this, the concept is an application that not only tells travellers of the different events around the area but creates events for users and automatically invites people of similar interests together. The concept allows travellers to meet like-minded people while travelling, increasing the chance of creating quality travel buddies who would be interested in doing the same things. 
