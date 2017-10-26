@@ -115,22 +115,23 @@ The findings from this round of user-testing were that users were generally conf
 More information, raw data and evaluation on user-testing can be found on the wiki at this link: https://github.com/deco3500-2017/packed-to-the-rafters/wiki/User-Testing
 
 ### 3. Making Changes and Web Prototype 1.0
-- Back to the start of the design process
-- Implementing changes into mockups and any other changes we made
-- Putting these into an InVision prototype
-- Meanwhile, beginning to implement the foundation layout for the web prototype - LINK TO PROGRESS 2.0 WIKI
+In completion of one full iteration of creating and testing and evaluating, the team started back at the beginging of the design process and made some changes to the app. The group got together to re-design the problematic aspects of Travel Pack. Icons were changed to all be unique to their functions, a more obvious link was made for the event chat within the individual events information page, the 'people in the area' function was removed and replaced with 'popular attractions'. The create event functionality was discussed as a group as one of the main functions of the app as well as the design of the app flow overall. The documentation from this group discussion can be found here: https://github.com/deco3500-2017/packed-to-the-rafters/wiki/Meeting-4-1---New-app-flow
+These changes were then implemented into new mockups. These mockups were then used to create the second iteration of the InVision prototype. The documentation, changes made and link to the prototype can be found in this wiki: https://github.com/deco3500-2017/packed-to-the-rafters/wiki/Invision-Prototype---Iteration-2
+The group, while implementing the InVision prototype, made a start on the web prototype and foundation layer of the application. Link to the progress on this can be found here: https://github.com/deco3500-2017/packed-to-the-rafters/wiki/Web-Prototype-Progress
 
 ### 4. InVision Prototype 2.0
-- Testing the refined InVision prototype
-- Who we interviewed
-- Main findings
-- LINK TO USER TESTING WIKI
+Once the InVision prototype was completed a second series of user-tests were completed. This testing's purpose was to evaluate the changes made to TravelPack and whether the aspects of the app that were negative in the first round of testing are no longer an issue. 
+Testing documentation, raw data and evaluation can be found here: https://github.com/deco3500-2017/packed-to-the-rafters/wiki/Invision-Prototype---User-Testing-2. Again we tested the prototype on young travellers of all backgrounds. 
+The findings from the testing were overall very positive. The small problems associated with the testing were mainly due to limited functionality. Some users had difficulty knowing the purpose of aspects at first glance, but once they played around with the prototype they understood the use for each feature and completed all tasks in the user tests. The results implied a successful change in the prototype to ensure a usable and understandable application for travellers.
+The web-based prototype was built apon with regards to the mockups and all aspects were implemented after feedback from user-testing was positive. All main pages were added to the prototype as well as styling of the site. No functionality was implemented yet. 
+Progress and documentation on the web-prototype can be viewed here: https://github.com/deco3500-2017/packed-to-the-rafters/wiki/Web-Prototype-Progress-2.0
 
 ### 5. Web Prototype 2.0
-- Final version of web prototype 
-- Main functionalities
-- LINK TO PROGRESS 3.0 WIKI
-- Last minute user testing before showcase - LINK TO WIKI
+
+In the last stage of the project, the final verson of the web-prototype was coming together. All map and event functionality was added into the prototype so users could see markers on the maps and read about attractions as well as create their own events to appear within the app. 
+The main function of the prototype is to be able to view and create events. Users area also able to search locations on the map. 
+A link to the progress wiki for the web-prototype can be found here: https://github.com/deco3500-2017/packed-to-the-rafters/wiki/Web-Prototype-Progress-3.0=
+The final and completed version of the prototype can be found here: travelpack.uqcloud.net  
 
 # The Team
 *Pack*ed to The Rafters consists of five team members:
