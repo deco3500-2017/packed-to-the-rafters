@@ -33,6 +33,7 @@
 		<div class="event-titles">
 			<h1 id="eName" class="indiv-event-h1"></h1>
 			<p id="indiv-location" class="minor-details"></p>
+			<button id="edit-event-btn"> EDIT </button>
 		</div>
 		<div class="event-details relative">
 			<span id="chakradance-icon" class="chat-icon"><i class="fa fa-commenting-o" aria-hidden="true"></i></span>
@@ -63,6 +64,13 @@
 	<div id="chakradance-chat" class="chat-scr">
 		<img src="../images/events/chakradance/chat.jpg">
 		<button id="chakradance-chat-back" class="back-btn"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button>
+	</div>
+
+	<div id="editEvent">
+		<button class="back-btn" id="edit-back-btn"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button>
+		<div class="edit-container">
+			<img src="images/edit-event.png">
+		</div>
 	</div>
 
 	<!-- START Slick Slider | REF: http://kenwheeler.github.io/slick/#go-get-it -->

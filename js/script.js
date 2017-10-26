@@ -65,6 +65,18 @@ $(document).ready(function() {
     });
 
 
+    //*====== EDIT EVENT ======*//
+
+    $("#edit-back-btn").on("click", function(){
+      $("#editEvent").hide();
+
+    });
+
+    $("#edit-event-btn").on("click", function(){
+      $("#editEvent").show();
+    });
+
+
 
     /*====== CREATE EVENT ======*/
 
@@ -87,7 +99,7 @@ $(document).ready(function() {
         });
     }
     */
-    /* Creates event 
+    /* Creates event
     $("#save-create").on("click", function() {
     	// Validate inputs - to be done
         // First Check if inputs aren't empty an valid
@@ -114,7 +126,7 @@ $(document).ready(function() {
             return;
         }
         //Don't check if time is in the past. due to all events
-        //that are within todays date are being plotted 
+        //that are within todays date are being plotted
         var eventTime = $("#event-time").val();
 
         // Check Location
@@ -170,7 +182,7 @@ $(document).ready(function() {
 
     /*====== SHOW/HIDE CHATS & CREATE EVENT/EDIT PROFILE ======*/
 
-   
+
     /* Shows Oktoberfest chat */
     $("#okt-icon").on("click", function() {
         $("#oktoberfest-chat").slideToggle();

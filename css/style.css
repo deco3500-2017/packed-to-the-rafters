@@ -904,3 +904,31 @@ ul.nav-bar {
 #suggested-locations ul li{
 	padding-top: 20px;
 }
+
+
+#editEvent{
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #efefef;
+	z-index: 999999;
+}
+
+#edit-event-btn{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	border-radius: 15px;
+	background-color: #00dd98;
+	padding: 4px 12px;
+	font-size: 0.8em;
+	color: #FFFFFF;
+	position: relative;
+	-webkit-box-shadow: -2px 12px 10px -9px rgba(0,0,0,0.30);
+	-moz-box-shadow: -2px 12px 10px -9px rgba(0,0,0,0.30);
+	box-shadow: -2px 12px 10px -9px rgba(0,0,0,0.30);
+}
