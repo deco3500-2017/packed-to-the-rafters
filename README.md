@@ -209,6 +209,10 @@ Below is the brief breakdown of all upcoming sprints.
 | 5 | 16th October | 22nd October | Conference poster creation and finalising designs and documentation |
 | 6 | 23rd October | 27th October | Finalising product, preparing for presentation, product submission |
 
+## Showcase
+The showcase is now completed and so is our project. It was a great evening and TravelPack group pitched our product concept and prototype to numerous visiters and classmates. We had our posters, our web app, our video playing and a link for people to access the prototype on their own phones to try out. The group walked the people through the prototype and the concept of the application giving examples of when they might use each specific function. 
+Overall our group recieved an extremely positve response and interest towards TravelPack. Many people claimed that this would have been great for them when they went travelling and they wished they had an app like this. 
+There were stickers given to everyone that attended the event and our project recieved around 17 stickers which our group is very pleased with. 
 
 # Tags
 `travel` `backpacker` `community` `active communities` `social` `awareness` `interaction` `shared-information-spaces` `social-translucence` `conversation`
