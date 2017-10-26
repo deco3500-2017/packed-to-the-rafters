@@ -94,7 +94,40 @@ Relationship Status: Single
 - How can we help him to find the all authentic traditional food in each destination?
 - How can provide tips or common phrases to help him communicate with locals in their native language?
 
-***
+## Design Process
+
+The creation of Travel Pack consisted of an iterative process of empathizing, defining, ideating, prototyping and testing. 
+
+### 1. Constructing A Base Solution
+- Empathizing and fleshing out what features to incorporate + elaborating off of Kirstyn's poster
+- How we focused on creating a base prototype off of what features we thought were appropriate to implement - didn't think TOO much about the flow
+- Wireframes - LINK TO WIKI
+- Mockups - LINK TO WIKI
+- Futher info: LINK TO MEETING
+
+### 2. InVision Prototype 1.0
+- Turning the mockups into an InVision prototype
+- Who we interviewed
+- Main findings and what changes were made
+- LINK TO USER TESTING WIKI
+
+### 3. Making Changes and Web Prototype 1.0
+- Back to the start of the design process
+- Implementing changes into mockups and any other changes we made
+- Putting these into an InVision prototype
+- Meanwhile, beginning to implement the foundation layout for the web prototype - LINK TO PROGRESS 2.0 WIKI
+
+### 4. InVision Prototype 2.0
+- Testing the refined InVision prototype
+- Who we interviewed
+- Main findings
+- LINK TO USER TESTING WIKI
+
+### 5. Web Prototype 2.0
+- Final version of web prototype 
+- Main functionalities
+- LINK TO PROGRESS 3.0 WIKI
+- Last minute user testing before showcase - LINK TO WIKI
 
 # The Team
 *Pack*ed to The Rafters consists of five team members:
