@@ -99,17 +99,20 @@ Relationship Status: Single
 The creation of Travel Pack consisted of an iterative process of empathizing, defining, ideating, prototyping and testing. 
 
 ### 1. Constructing A Base Solution
-- Empathizing and fleshing out what features to incorporate + elaborating off of Kirstyn's poster
-- How we focused on creating a base prototype off of what features we thought were appropriate to implement - didn't think TOO much about the flow
-- Wireframes - LINK TO WIKI
-- Mockups - LINK TO WIKI
-- Futher info: LINK TO MEETING
+
+The team together worked to empathize and flesh out the features to incorporate into Travel Pack. Packed to the Rafters elaborated off of the basic concept idea from Kirstyn's poster. 
+The group started off by listing appropriate features neccesary to implement and generated user personas and stories. User research was completed in a survey/interview form. The users that were interviewed were young people who had been travelling either international or domestic and some of which had backpacked. From this research more features and scenarios were made. Feedback was gathered on whether users thought certain features and aspects would be useful in a travelling situation and whether they could see themselves using the app. 
+Documentation on User Research can be found at this link: https://github.com/deco3500-2017/packed-to-the-rafters/wiki/User-Research
+During this stage, the group wasn't too focused on the flow and site-map navigation of the application. We focused on including all neccesary features. 
+Wireframes were created as a group, this was the first time the group really considered the flow of the app. The wiki on wireframe creation can be found at this link: https://github.com/deco3500-2017/packed-to-the-rafters/wiki/Wireframes
+Soon after creating wireframes, the first mockups were created based off of the wireframes. Documentation and images of the mockups can be found here: https://github.com/deco3500-2017/packed-to-the-rafters/wiki/Initial-Mockups. 
+Further information on this sprint can be found in the meeting notes: https://github.com/deco3500-2017/packed-to-the-rafters/wiki/Sprint-2-,-Meeting-2-and-Contributions
 
 ### 2. InVision Prototype 1.0
-- Turning the mockups into an InVision prototype
-- Who we interviewed
-- Main findings and what changes were made
-- LINK TO USER TESTING WIKI
+During this sprint the team created an InVision prototype using the mockups made. This is wear the flow of the app was implemented and the app was to some degree testable. 
+User testing was completed on this prototype in order to find feedback and results on how users liked the look and flow of the application and whether they understood the purpose for each page and feature of the app. 
+The findings from this round of user-testing were that users were generally confused with the re-use of certain symbols for different features. There was confusion in the event group chat on what it was and what its purpose was. Users wanted more information on each event. It happened to be so that in testing the prototype a mockup feature of additional information for each event was accidentally nto included and therefore not tested. This was then put straight into the second iteration of the prototype. 
+More information, raw data and evaluation on user-testing can be found on the wiki at this link: https://github.com/deco3500-2017/packed-to-the-rafters/wiki/User-Testing
 
 ### 3. Making Changes and Web Prototype 1.0
 - Back to the start of the design process
